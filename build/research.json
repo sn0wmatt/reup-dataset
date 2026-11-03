@@ -1,5 +1,5 @@
 {
-  "_about": "Hand-curated research overlay for the ReUp dataset. Values are copied as numbers from the cited page, in the page's own units, so a reviewer can check each one against the source. All text (notes, comingUp, interaction notes) is written in our own words. build_researched.py merges this with the TripSit-derived provisional file.",
+  "_about": "Hand-curated research overlay for the ReUp dataset. Values are copied as numbers from the cited page, in the page's own units, so a reviewer can check each one against the source. All text (notes, comingUp, stacking, interaction notes) is written in our own words. build_researched.py merges this with the TripSit-derived provisional file.",
   "retrievedAt": "2026-11-03",
   "sources": [
     {
@@ -16,8 +16,8 @@
       "title": "PsychonautWiki",
       "url": "https://psychonautwiki.org",
       "retrievedAt": "2026-11-03",
-      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing figures and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
-      "credit": "Onset, come-up, peak and offset ranges, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes by ReUp.",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing and tolerance figures, cross-tolerance, and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
+      "credit": "Onset, come-up, peak and offset ranges, tolerance times and cross-tolerance, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days by ReUp.",
       "creditUrl": "https://psychonautwiki.org"
     },
     {
@@ -28,6 +28,24 @@
       "license": "All rights reserved. Used for facts only (timings and redose waits); all wording is ReUp's own.",
       "credit": "Redose guidance and timing checks from DanceSafe (dancesafe.org).",
       "creditUrl": "https://dancesafe.org"
+    },
+    {
+      "id": "peiro2013",
+      "title": "Peiró et al. 2013",
+      "url": "https://doi.org/10.1007/s00213-012-2894-7",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article. Used for facts only; all wording is ReUp's own.",
+      "credit": "Findings on MDMA redosing (blood levels and felt effects of a second dose) from Peiró et al., \"Human pharmacology of MDMA after repeated doses taken 2 h apart\", Psychopharmacology 225(4):883–893, 2013.",
+      "creditUrl": "https://doi.org/10.1007/s00213-012-2894-7"
+    },
+    {
+      "id": "farre2015",
+      "title": "Farré et al. 2015",
+      "url": "https://doi.org/10.1016/j.euroneuro.2015.05.007",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article. Used for facts only; all wording is ReUp's own.",
+      "credit": "Findings on MDMA redosing (acute tolerance to a second dose) from Farré et al., \"Human pharmacology of MDMA after repeated doses taken 4 h apart\", European Neuropsychopharmacology 25(10):1637–1649, 2015.",
+      "creditUrl": "https://doi.org/10.1016/j.euroneuro.2015.05.007"
     },
     {"id": "bracchi-2015", "title": "Bracchi et al., Increasing use of 'party drugs' in people living with HIV on antiretrovirals: a concern for patient safety. AIDS, 2015", "url": "https://discovery-pp.ucl.ac.uk/1478066/1/AIDS-D-15-01226_preprint_accepted.pdf", "retrievedAt": "2026-11-03", "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.", "credit": "HIV booster combination risks from Bracchi M, Stuart D, Castles R, Khoo S, Back D, Boffito M. AIDS, 2015.", "creditUrl": "https://discovery-pp.ucl.ac.uk/1478066/1/AIDS-D-15-01226_preprint_accepted.pdf"},
     {"id": "henry-hill-1998", "title": "Henry JA, Hill IR. Fatal interaction between ritonavir and MDMA. Lancet, 1998", "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Fatal+interaction+between+ritonavir+and+MDMA", "retrievedAt": "2026-11-03", "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.", "credit": "Ritonavir and MDMA case report: Henry JA, Hill IR. Lancet, 1998;352:1751-2.", "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Fatal+interaction+between+ritonavir+and+MDMA"},
@@ -46,7 +64,9 @@
         "oral": {"text": "Usually starts 20 to 70 minutes after swallowing. Early on you may feel restless, tingly, jaw-tight or a bit sick before the warm, open feeling arrives. Not feeling it yet is normal; taking more now can mean both doses hit together.", "sourceIds": ["tripsit", "psychonautwiki", "dancesafe"]},
         "insufflated": {"text": "Snorting MDMA does not make it start much sooner. Wait out the full onset window before deciding the first dose isn't working, or both doses may land together.", "sourceIds": ["tripsit"]},
         "rectal": {"text": "Effects can take over an hour to start. Wait out the full onset window before deciding the first dose isn't working, or both doses may land together.", "sourceIds": ["tripsit"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/MDMA", "buildsAfter": "one use", "half": "1 month", "baseline": "2.5 months"}, "crossToleranceWith": ["cocaine", "amphetamine", "mephedrone"]},
+      "stacking": {"text": "A second dose pushes the amount in your blood higher than the first did, yet usually feels weaker. It adds strain on your heart and blood pressure without bringing the first rush back.", "sourceIds": ["peiro2013", "farre2015"]}
     },
     "ketamine": {
       "notes": "Effects build fast and can tip into a k-hole, where moving and talking become hard. Sit or lie down somewhere safe, and avoid it with alcohol or GHB.",
@@ -62,7 +82,9 @@
       "comingUp": {
         "insufflated": {"text": "A bump usually hits within a few minutes and peaks within about an hour. Another bump on top can tip you into a k-hole where you can't move or talk safely. Sit down first, and never mix it with alcohol or GHB.", "sourceIds": ["psychonautwiki", "dancesafe"]},
         "oral": {"text": "Swallowed ketamine is slower and less predictable, taking up to an hour or more to start. Not feeling it yet is normal; taking more now can stack into a k-hole. Sit down somewhere safe.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Ketamine", "buildsAfter": "repeated use", "half": "14 days", "baseline": "28 days"}, "crossToleranceWith": []},
+      "stacking": {"text": "Each bump lands on top of the last, and the short high makes it easy to keep going. Stacking bumps is how people end up in a k-hole, unable to move or talk safely.", "sourceIds": ["psychonautwiki"]}
     },
     "cocaine": {
       "notes": "Very short effects and a sharp dip afterwards drive frequent redosing. Each dose adds strain on the heart, more so with alcohol, other stimulants, heat or dancing hard.",
@@ -74,7 +96,9 @@
       },
       "comingUp": {
         "insufflated": {"text": "A line kicks in within minutes, peaks fast and fades within an hour or so. The urge to do another as it fades is the drug, not a sign you need more. Each line adds strain on your heart, so space them out and drink water.", "sourceIds": ["psychonautwiki", "dancesafe"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Cocaine", "buildsAfter": "repeated use", "half": "3-7 days", "baseline": "1-2 weeks"}, "crossToleranceWith": ["amphetamine", "mephedrone"]},
+      "stacking": {"text": "The high fades within minutes and the pull for another line is strong. Each line still adds to the load on your heart, even when it feels like less.", "sourceIds": ["psychonautwiki"]}
     },
     "amphetamine": {
       "notes": "Long-lasting. Doses taken late keep you awake well past the end of the night.",
@@ -89,7 +113,8 @@
       "comingUp": {
         "oral": {"text": "Swallowed speed can take up to 45 minutes to start and keeps building for an hour or two after that. Not feeling the full effect yet is normal; more now means a longer, harder night and no sleep.", "sourceIds": ["tripsit", "psychonautwiki"]},
         "insufflated": {"text": "A line starts within minutes but keeps building for up to an hour and a half. Wait for it to level off before deciding you need more; it lasts for hours.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Amphetamine", "buildsAfter": "repeated use", "half": "3-7 days", "baseline": "1-2 weeks"}, "crossToleranceWith": ["cocaine", "mephedrone"]}
     },
     "mephedrone": {
       "notes": "Strong urge to redose as it wears off. Plan a limit before you start.",
@@ -104,7 +129,9 @@
       "comingUp": {
         "oral": {"text": "Bombed or swallowed, it can take up to 45 minutes to start, then builds for another half hour. Not feeling it yet is normal. The craving for more is strong with this one; stick to the limit you planned.", "sourceIds": ["tripsit", "psychonautwiki"]},
         "insufflated": {"text": "A line starts within minutes and builds over the next half hour. The craving for more is strong as it fades; that is the drug, not a sign you need more. Stick to the limit you planned.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Mephedrone", "buildsAfter": "repeated use", "half": "3-7 days", "baseline": "1-2 weeks"}, "crossToleranceWith": ["cocaine", "amphetamine"]},
+      "stacking": {"text": "The effects are short and the urge to redose is very strong. Decide your limit before you start and let the wait timer hold you to it.", "sourceIds": ["psychonautwiki"]}
     },
     "lsd": {
       "notes": "Lasts most of a day. Strength per tab varies a lot, so start low with a new batch. PsychonautWiki lists LSD as sublingual; its figures are used here for tabs held in the mouth then swallowed.",
@@ -116,7 +143,9 @@
       },
       "comingUp": {
         "oral": {"text": "Can take up to an hour and a half to notice, and keeps building for another hour or more. Wait at least 3 hours before taking more, or both doses can arrive at once. It lasts 8 to 14 hours either way.", "sourceIds": ["tripsit", "psychonautwiki", "dancesafe"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/LSD", "buildsAfter": "one use", "baseline": "5 days"}, "crossToleranceWith": ["psilocybin-mushrooms", "2c-b"]},
+      "stacking": {"text": "Tolerance starts within hours, so a second dose mid-trip adds less than you expect and mostly makes the trip last longer.", "sourceIds": ["psychonautwiki"]}
     },
     "psilocybin-mushrooms": {
       "notes": "Strength varies by species and batch. Effects take a while to build; eating more early makes the peak much stronger.",
@@ -127,7 +156,9 @@
       },
       "comingUp": {
         "oral": {"text": "Usually starts 20 to 60 minutes after eating, then builds for another hour or so. Yawning, an uneasy stomach or feeling odd is common early on. Not feeling much yet is normal; eating more now can make the peak far stronger.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Psilocybin_mushrooms", "buildsAfter": "one use", "half": "3 days", "baseline": "7 days"}, "crossToleranceWith": ["lsd", "2c-b"]},
+      "stacking": {"text": "Tolerance builds almost straight away, so more mushrooms mid-trip add less than you expect and mostly make the trip last longer.", "sourceIds": ["psychonautwiki"]}
     },
     "2c-b": {
       "notes": "Small changes in dose make a big difference. Snorting or plugging is faster, stronger and shorter than swallowing.",
@@ -159,7 +190,8 @@
       },
       "comingUp": {
         "oral": {"text": "Can take up to an hour to kick in. Many overdoses happen when people take more too soon, so wait at least 2 hours. Never mix with alcohol. If someone can't be woken, put them on their side and get medical help.", "sourceIds": ["tripsit", "psychonautwiki", "dancesafe"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/GHB", "buildsAfter": "repeated use", "baseline": "7-14 days"}, "crossToleranceWith": ["alcohol"]}
     },
     "cannabis": {
       "notes": "Edibles are slow and long. Smoking is quick and short. Strength varies a lot by product.",
@@ -174,7 +206,8 @@
       "comingUp": {
         "oral": {"text": "Edibles can take up to 2 hours to start and another hour to build. This is the classic one to take too much of: not feeling it yet is normal. Eating more now can mean a very long, rough night.", "sourceIds": ["tripsit", "psychonautwiki"]},
         "smoked": {"text": "Felt within minutes and peaks within the first half hour or so. Wait for it to settle before having more, especially if you've also been drinking.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Cannabis", "buildsAfter": "repeated use", "half": "1-2 weeks", "baseline": "2-3 weeks"}, "crossToleranceWith": []}
     },
     "alcohol": {
       "notes": "Timings are per drink. Alcohol makes most other depressants far more dangerous, especially GHB and ketamine.",
@@ -185,7 +218,8 @@
       },
       "comingUp": {
         "oral": {"text": "A drink keeps hitting harder for up to about 50 minutes after you have it, so you'll feel drunker than you do now. Space drinks out and have water in between.", "sourceIds": ["psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Alcohol", "buildsAfter": "repeated use", "half": "3-7 days", "baseline": "1-2 weeks"}, "crossToleranceWith": ["ghb"]}
     },
     "nitrous-oxide": {
       "notes": "Lasts a minute or two. Breathe normal air between balloons and sit down; never inhale straight from a canister or cracker.",
@@ -196,7 +230,8 @@
       },
       "comingUp": {
         "other": {"text": "Hits within seconds and is gone within a few minutes. Sit down before a balloon, and take some normal breaths between them so you don't pass out.", "sourceIds": ["tripsit", "psychonautwiki"]}
-      }
+      },
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Nitrous", "buildsAfter": "repeated use", "half": "3-7 days", "baseline": "1-2 weeks"}, "crossToleranceWith": []}
     }
   },
   "interactionNotes": {

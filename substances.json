@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "0.3.0",
+  "datasetVersion": "0.4.0",
   "publishedAt": "2026-11-03",
   "license": "CC BY-SA 4.0 (TripSit figures under TripSit's terms)",
   "homepage": "https://github.com/sn0wmatt/reup-dataset",
@@ -19,8 +19,8 @@
       "title": "PsychonautWiki",
       "url": "https://psychonautwiki.org",
       "retrievedAt": "2026-11-03",
-      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing figures and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
-      "credit": "Onset, come-up, peak and offset ranges, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes by ReUp.",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing and tolerance figures, cross-tolerance, and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
+      "credit": "Onset, come-up, peak and offset ranges, tolerance times and cross-tolerance, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days by ReUp.",
       "creditUrl": "https://psychonautwiki.org"
     },
     {
@@ -31,6 +31,24 @@
       "license": "All rights reserved. Used for facts only (timings and redose waits); all wording is ReUp's own.",
       "credit": "Redose guidance and timing checks from DanceSafe (dancesafe.org).",
       "creditUrl": "https://dancesafe.org"
+    },
+    {
+      "id": "peiro2013",
+      "title": "Peiró et al. 2013",
+      "url": "https://doi.org/10.1007/s00213-012-2894-7",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article. Used for facts only; all wording is ReUp's own.",
+      "credit": "Findings on MDMA redosing (blood levels and felt effects of a second dose) from Peiró et al., \"Human pharmacology of MDMA after repeated doses taken 2 h apart\", Psychopharmacology 225(4):883–893, 2013.",
+      "creditUrl": "https://doi.org/10.1007/s00213-012-2894-7"
+    },
+    {
+      "id": "farre2015",
+      "title": "Farré et al. 2015",
+      "url": "https://doi.org/10.1016/j.euroneuro.2015.05.007",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article. Used for facts only; all wording is ReUp's own.",
+      "credit": "Findings on MDMA redosing (acute tolerance to a second dose) from Farré et al., \"Human pharmacology of MDMA after repeated doses taken 4 h apart\", European Neuropsychopharmacology 25(10):1637–1649, 2015.",
+      "creditUrl": "https://doi.org/10.1016/j.euroneuro.2015.05.007"
     },
     {
       "id": "bracchi-2015",
@@ -155,6 +173,32 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": true,
+        "halfDays": {
+          "min": 30,
+          "max": 30
+        },
+        "baselineDays": {
+          "min": 75,
+          "max": 75
+        },
+        "crossToleranceWith": [
+          "amphetamine",
+          "cocaine",
+          "mephedrone"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "A second dose pushes the amount in your blood higher than the first did, yet usually feels weaker. It adds strain on your heart and blood pressure without bringing the first rush back.",
+        "sourceIds": [
+          "farre2015",
+          "peiro2013"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -243,6 +287,27 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 14,
+          "max": 14
+        },
+        "baselineDays": {
+          "min": 28,
+          "max": 28
+        },
+        "crossToleranceWith": [],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "Each bump lands on top of the last, and the short high makes it easy to keep going. Stacking bumps is how people end up in a k-hole, unable to move or talk safely.",
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -293,6 +358,30 @@
             "dancesafe"
           ]
         }
+      },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 3,
+          "max": 7
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [
+          "amphetamine",
+          "mephedrone"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "The high fades within minutes and the pull for another line is strong. Each line still adds to the load on your heart, even when it feels like less.",
+        "sourceIds": [
+          "psychonautwiki"
+        ]
       },
       "sourceIds": [
         "tripsit",
@@ -382,6 +471,24 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 3,
+          "max": 7
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [
+          "cocaine",
+          "mephedrone"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -468,6 +575,30 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 3,
+          "max": 7
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [
+          "amphetamine",
+          "cocaine"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "The effects are short and the urge to redose is very strong. Decide your limit before you start and let the wait timer hold you to it.",
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -523,6 +654,26 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": true,
+        "baselineDays": {
+          "min": 5,
+          "max": 5
+        },
+        "crossToleranceWith": [
+          "2c-b",
+          "psilocybin-mushrooms"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "Tolerance starts within hours, so a second dose mid-trip adds less than you expect and mostly makes the trip last longer.",
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -575,6 +726,30 @@
             "psychonautwiki"
           ]
         }
+      },
+      "tolerance": {
+        "buildsAfterOneUse": true,
+        "halfDays": {
+          "min": 3,
+          "max": 3
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 7
+        },
+        "crossToleranceWith": [
+          "2c-b",
+          "lsd"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
+      "stacking": {
+        "text": "Tolerance builds almost straight away, so more mushrooms mid-trip add less than you expect and mostly make the trip last longer.",
+        "sourceIds": [
+          "psychonautwiki"
+        ]
       },
       "sourceIds": [
         "tripsit",
@@ -737,6 +912,19 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [
+          "alcohol"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -824,6 +1012,21 @@
           ]
         }
       },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 7,
+          "max": 14
+        },
+        "baselineDays": {
+          "min": 14,
+          "max": 21
+        },
+        "crossToleranceWith": [],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
+      },
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -875,6 +1078,23 @@
             "psychonautwiki"
           ]
         }
+      },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 3,
+          "max": 7
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [
+          "ghb"
+        ],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
       },
       "sourceIds": [
         "tripsit",
@@ -929,6 +1149,21 @@
             "psychonautwiki"
           ]
         }
+      },
+      "tolerance": {
+        "buildsAfterOneUse": false,
+        "halfDays": {
+          "min": 3,
+          "max": 7
+        },
+        "baselineDays": {
+          "min": 7,
+          "max": 14
+        },
+        "crossToleranceWith": [],
+        "sourceIds": [
+          "psychonautwiki"
+        ]
       },
       "sourceIds": [
         "tripsit",

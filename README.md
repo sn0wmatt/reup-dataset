@@ -6,7 +6,7 @@ prescription medicine classes. Every figure cites its source. It is the dataset 
 ReUp harm-reduction app for Apple Watch and iPhone, published here so anyone can check it,
 correct it and reuse it.
 
-**Version 0.3.0**, published 2026-11-03.
+**Version 0.4.0**, published 2026-11-03.
 
 > Timings are typical ranges, not guarantees, and are not medical advice. People vary, and
 > doses, purity and mixing change everything. If someone is in trouble, get medical help.

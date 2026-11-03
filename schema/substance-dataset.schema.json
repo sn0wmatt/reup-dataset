@@ -170,6 +170,54 @@
                 "other"
               ]
             }
+          },
+          "tolerance": {
+            "type": "object",
+            "description": "How tolerance builds and fades, from cited figures (FR-024). Shown only in the iPhone app. Days are whole days; crossToleranceWith lists substance ids that feel weaker after this one.",
+            "required": [
+              "buildsAfterOneUse",
+              "sourceIds"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "buildsAfterOneUse": {
+                "type": "boolean"
+              },
+              "halfDays": {
+                "$ref": "#/$defs/dayRange"
+              },
+              "baselineDays": {
+                "$ref": "#/$defs/dayRange"
+              },
+              "crossToleranceWith": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sourceIds": {
+                "$ref": "#/$defs/sourceIds"
+              }
+            }
+          },
+          "stacking": {
+            "type": "object",
+            "description": "What a redose on top of an active dose does, in our own words (FR-024). iPhone only; must cite sources.",
+            "required": [
+              "text",
+              "sourceIds"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 280
+              },
+              "sourceIds": {
+                "$ref": "#/$defs/sourceIds"
+              }
+            }
           }
         }
       }
@@ -309,6 +357,45 @@
         },
         "sourceIds": {
           "$ref": "#/$defs/sourceIds"
+        },
+        "redoseAmountPercent": {
+          "type": "object",
+          "description": "A sourced size for one redose, as a share of the last dose. Only where a source gives one.",
+          "required": [
+            "min",
+            "max"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "min": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    },
+    "dayRange": {
+      "type": "object",
+      "required": [
+        "min",
+        "max"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 0
         }
       }
     }
