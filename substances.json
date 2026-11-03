@@ -1,0 +1,2063 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "0.3.0",
+  "publishedAt": "2026-11-03",
+  "license": "CC BY-SA 4.0 (TripSit figures under TripSit's terms)",
+  "homepage": "https://github.com/sn0wmatt/reup-dataset",
+  "sources": [
+    {
+      "id": "tripsit",
+      "title": "TripSit drug database",
+      "url": "https://github.com/TripSit/drugs",
+      "retrievedAt": "2026-11-03",
+      "license": "TripSit factsheet terms: free for non-commercial use with credit and a link back. Written confirmation for ReUp to be requested before release.",
+      "credit": "Onset and duration ranges and combination ratings from TripSit (tripsit.me).",
+      "creditUrl": "https://tripsit.me"
+    },
+    {
+      "id": "psychonautwiki",
+      "title": "PsychonautWiki",
+      "url": "https://psychonautwiki.org",
+      "retrievedAt": "2026-11-03",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing figures and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
+      "credit": "Onset, come-up, peak and offset ranges, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes by ReUp.",
+      "creditUrl": "https://psychonautwiki.org"
+    },
+    {
+      "id": "dancesafe",
+      "title": "DanceSafe drug information",
+      "url": "https://dancesafe.org",
+      "retrievedAt": "2026-11-03",
+      "license": "All rights reserved. Used for facts only (timings and redose waits); all wording is ReUp's own.",
+      "credit": "Redose guidance and timing checks from DanceSafe (dancesafe.org).",
+      "creditUrl": "https://dancesafe.org"
+    },
+    {
+      "id": "bracchi-2015",
+      "title": "Bracchi et al., Increasing use of 'party drugs' in people living with HIV on antiretrovirals: a concern for patient safety. AIDS, 2015",
+      "url": "https://discovery-pp.ucl.ac.uk/1478066/1/AIDS-D-15-01226_preprint_accepted.pdf",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.",
+      "credit": "HIV booster combination risks from Bracchi M, Stuart D, Castles R, Khoo S, Back D, Boffito M. AIDS, 2015.",
+      "creditUrl": "https://discovery-pp.ucl.ac.uk/1478066/1/AIDS-D-15-01226_preprint_accepted.pdf"
+    },
+    {
+      "id": "henry-hill-1998",
+      "title": "Henry JA, Hill IR. Fatal interaction between ritonavir and MDMA. Lancet, 1998",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Fatal+interaction+between+ritonavir+and+MDMA",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.",
+      "credit": "Ritonavir and MDMA case report: Henry JA, Hill IR. Lancet, 1998;352:1751-2.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Fatal+interaction+between+ritonavir+and+MDMA"
+    },
+    {
+      "id": "harrington-1999",
+      "title": "Harrington RD et al. Life-threatening interactions between HIV-1 protease inhibitors and the illicit drugs MDMA and gamma-hydroxybutyrate. Arch Intern Med, 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Life-threatening+interactions+between+HIV-1+protease+inhibitors+and+the+illicit+drugs+MDMA+and+gamma-hydroxybutyrate",
+      "retrievedAt": "2026-11-03",
+      "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.",
+      "credit": "Ritonavir with MDMA and GHB case report: Harrington RD, Woodward JA, Hooton TM, Horn JR. Arch Intern Med, 1999;159:2221-4.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Life-threatening+interactions+between+HIV-1+protease+inhibitors+and+the+illicit+drugs+MDMA+and+gamma-hydroxybutyrate"
+    }
+  ],
+  "substances": [
+    {
+      "id": "mdma",
+      "name": "MDMA",
+      "aliases": [
+        "adam",
+        "ecstasy",
+        "mandy",
+        "md",
+        "molly",
+        "x"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "comeUpMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "peakMinutes": {
+            "min": 90,
+            "max": 150
+          },
+          "offsetMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "minRedoseMinutes": 90,
+          "redoseAmountPercent": {
+            "min": 33,
+            "max": 50
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "rectal": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Timings vary with dose, purity and food. A redose, if any, is usually one smaller dose; more mostly adds side effects and a worse next day.",
+      "comingUp": {
+        "oral": {
+          "text": "Usually starts 20 to 70 minutes after swallowing. Early on you may feel restless, tingly, jaw-tight or a bit sick before the warm, open feeling arrives. Not feeling it yet is normal; taking more now can mean both doses hit together.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "insufflated": {
+          "text": "Snorting MDMA does not make it start much sooner. Wait out the full onset window before deciding the first dose isn't working, or both doses may land together.",
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "rectal": {
+          "text": "Effects can take over an hour to start. Wait out the full onset window before deciding the first dose isn't working, or both doses may land together.",
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "ketamine",
+      "name": "Ketamine",
+      "aliases": [
+        "k",
+        "ket",
+        "kittens",
+        "kitty",
+        "special k"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 1,
+            "max": 20
+          },
+          "comeUpMinutes": {
+            "min": 5,
+            "max": 15
+          },
+          "peakMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "offsetMinutes": {
+            "min": 30,
+            "max": 60
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 10,
+            "max": 75
+          },
+          "comeUpMinutes": {
+            "min": 5,
+            "max": 20
+          },
+          "peakMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "offsetMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 500
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Effects build fast and can tip into a k-hole, where moving and talking become hard. Sit or lie down somewhere safe, and avoid it with alcohol or GHB.",
+      "comingUp": {
+        "insufflated": {
+          "text": "A bump usually hits within a few minutes and peaks within about an hour. Another bump on top can tip you into a k-hole where you can't move or talk safely. Sit down first, and never mix it with alcohol or GHB.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "oral": {
+          "text": "Swallowed ketamine is slower and less predictable, taking up to an hour or more to start. Not feeling it yet is normal; taking more now can stack into a k-hole. Sit down somewhere safe.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "cocaine",
+      "name": "Cocaine",
+      "aliases": [
+        "coke"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 3,
+            "max": 10
+          },
+          "comeUpMinutes": {
+            "min": 5,
+            "max": 12
+          },
+          "peakMinutes": {
+            "min": 7,
+            "max": 16
+          },
+          "offsetMinutes": {
+            "min": 10,
+            "max": 25
+          },
+          "totalMinutes": {
+            "min": 15,
+            "max": 90
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "notes": "Very short effects and a sharp dip afterwards drive frequent redosing. Each dose adds strain on the heart, more so with alcohol, other stimulants, heat or dancing hard.",
+      "comingUp": {
+        "insufflated": {
+          "text": "A line kicks in within minutes, peaks fast and fades within an hour or so. The urge to do another as it fades is the drug, not a sign you need more. Each line adds strain on your heart, so space them out and drink water.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "amphetamine",
+      "name": "Amphetamine",
+      "aliases": [
+        "amfetamine",
+        "amph",
+        "amphetamin",
+        "amphetamines",
+        "hearts",
+        "pep"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 1,
+            "max": 10
+          },
+          "comeUpMinutes": {
+            "min": 30,
+            "max": 90
+          },
+          "peakMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "offsetMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "comeUpMinutes": {
+            "min": 30,
+            "max": 135
+          },
+          "peakMinutes": {
+            "min": 150,
+            "max": 240
+          },
+          "offsetMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 480
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Long-lasting. Doses taken late keep you awake well past the end of the night.",
+      "comingUp": {
+        "oral": {
+          "text": "Swallowed speed can take up to 45 minutes to start and keeps building for an hour or two after that. Not feeling the full effect yet is normal; more now means a longer, harder night and no sleep.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "text": "A line starts within minutes but keeps building for up to an hour and a half. Wait for it to level off before deciding you need more; it lasts for hours.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    },
+    {
+      "id": "mephedrone",
+      "name": "Mephedrone",
+      "aliases": [
+        "4-methylmethcathinone",
+        "4-mmc",
+        "4mmc",
+        "m-cat",
+        "meow meow"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 5,
+            "max": 45
+          },
+          "comeUpMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "peakMinutes": {
+            "min": 45,
+            "max": 60
+          },
+          "offsetMinutes": {
+            "min": 30,
+            "max": 90
+          },
+          "totalMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "comeUpMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "peakMinutes": {
+            "min": 120,
+            "max": 240
+          },
+          "offsetMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "totalMinutes": {
+            "min": 150,
+            "max": 360
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Strong urge to redose as it wears off. Plan a limit before you start.",
+      "comingUp": {
+        "oral": {
+          "text": "Bombed or swallowed, it can take up to 45 minutes to start, then builds for another half hour. Not feeling it yet is normal. The craving for more is strong with this one; stick to the limit you planned.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "text": "A line starts within minutes and builds over the next half hour. The craving for more is strong as it fades; that is the drug, not a sign you need more. Stick to the limit you planned.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    },
+    {
+      "id": "lsd",
+      "name": "LSD",
+      "aliases": [
+        "acid",
+        "cid",
+        "lsd-25",
+        "lucy"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 90
+          },
+          "comeUpMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "peakMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "offsetMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "totalMinutes": {
+            "min": 480,
+            "max": 840
+          },
+          "minRedoseMinutes": 180,
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "notes": "Lasts most of a day. Strength per tab varies a lot, so start low with a new batch. PsychonautWiki lists LSD as sublingual; its figures are used here for tabs held in the mouth then swallowed.",
+      "comingUp": {
+        "oral": {
+          "text": "Can take up to an hour and a half to notice, and keeps building for another hour or more. Wait at least 3 hours before taking more, or both doses can arrive at once. It lasts 8 to 14 hours either way.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "psilocybin-mushrooms",
+      "name": "Mushrooms",
+      "aliases": [
+        "mushroom",
+        "psilocybin",
+        "psylocybin",
+        "shrooms"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 60
+          },
+          "comeUpMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "peakMinutes": {
+            "min": 120,
+            "max": 150
+          },
+          "offsetMinutes": {
+            "min": 150,
+            "max": 210
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 480
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Strength varies by species and batch. Effects take a while to build; eating more early makes the peak much stronger.",
+      "comingUp": {
+        "oral": {
+          "text": "Usually starts 20 to 60 minutes after eating, then builds for another hour or so. Yawning, an uneasy stomach or feeling odd is common early on. Not feeling much yet is normal; eating more now can make the peak far stronger.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    },
+    {
+      "id": "2c-b",
+      "name": "2C-B",
+      "aliases": [
+        "2-cb",
+        "2cb",
+        "bees",
+        "nexus"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 1,
+            "max": 10
+          },
+          "comeUpMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "peakMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "offsetMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "totalMinutes": {
+            "min": 120,
+            "max": 360
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 120
+          },
+          "comeUpMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "peakMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "offsetMinutes": {
+            "min": 150,
+            "max": 210
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 480
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "rectal": {
+          "onsetMinutes": {
+            "min": 0,
+            "max": 20
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 420
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Small changes in dose make a big difference. Snorting or plugging is faster, stronger and shorter than swallowing.",
+      "comingUp": {
+        "oral": {
+          "text": "Can take anywhere from 20 minutes to 2 hours to start, then builds for another hour or so. A body rush, chills or a queasy stomach are common early on. Not feeling it yet is normal; small extra amounts make a big difference.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "insufflated": {
+          "text": "Snorting it hits within minutes and is much more intense. It keeps building for up to half an hour, so wait before deciding you need more.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        "rectal": {
+          "text": "Starts within about 20 minutes and is stronger than swallowing the same amount. Wait for it to build before deciding you need more.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "ghb",
+      "name": "GHB",
+      "aliases": [],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 5,
+            "max": 60
+          },
+          "comeUpMinutes": {
+            "min": 10,
+            "max": 20
+          },
+          "peakMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "offsetMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "totalMinutes": {
+            "min": 90,
+            "max": 170
+          },
+          "minRedoseMinutes": 120,
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "notes": "The gap between a dose that feels good and one that knocks you out is small. Measure exactly, wait at least 2 hours between doses, and never mix with alcohol or ketamine. GBL acts faster and is stronger per millilitre.",
+      "comingUp": {
+        "oral": {
+          "text": "Can take up to an hour to kick in. Many overdoses happen when people take more too soon, so wait at least 2 hours. Never mix with alcohol. If someone can't be woken, put them on their side and get medical help.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki",
+        "dancesafe"
+      ]
+    },
+    {
+      "id": "cannabis",
+      "name": "Cannabis",
+      "aliases": [
+        "dagga",
+        "hash",
+        "marijuana",
+        "thc",
+        "weed"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 120
+          },
+          "comeUpMinutes": {
+            "min": 30,
+            "max": 60
+          },
+          "peakMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "offsetMinutes": {
+            "min": 240,
+            "max": 360
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 600
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "smoked": {
+          "onsetMinutes": {
+            "min": 0,
+            "max": 10
+          },
+          "comeUpMinutes": {
+            "min": 5,
+            "max": 10
+          },
+          "peakMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "offsetMinutes": {
+            "min": 180,
+            "max": 240
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Edibles are slow and long. Smoking is quick and short. Strength varies a lot by product.",
+      "comingUp": {
+        "oral": {
+          "text": "Edibles can take up to 2 hours to start and another hour to build. This is the classic one to take too much of: not feeling it yet is normal. Eating more now can mean a very long, rough night.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        "smoked": {
+          "text": "Felt within minutes and peaks within the first half hour or so. Wait for it to settle before having more, especially if you've also been drinking.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    },
+    {
+      "id": "alcohol",
+      "name": "Alcohol",
+      "aliases": [
+        "beer",
+        "booze",
+        "ethanol",
+        "etoh",
+        "hooch"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 2,
+            "max": 30
+          },
+          "comeUpMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "peakMinutes": {
+            "min": 30,
+            "max": 90
+          },
+          "offsetMinutes": {
+            "min": 45,
+            "max": 120
+          },
+          "totalMinutes": {
+            "min": 90,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Timings are per drink. Alcohol makes most other depressants far more dangerous, especially GHB and ketamine.",
+      "comingUp": {
+        "oral": {
+          "text": "A drink keeps hitting harder for up to about 50 minutes after you have it, so you'll feel drunker than you do now. Space drinks out and have water in between.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    },
+    {
+      "id": "nitrous-oxide",
+      "name": "Nitrous oxide",
+      "aliases": [
+        "hippy crack",
+        "laughing_gas",
+        "n20",
+        "n2o",
+        "nitrous oxide",
+        "nos"
+      ],
+      "routes": {
+        "other": {
+          "onsetMinutes": {
+            "min": 0,
+            "max": 1
+          },
+          "comeUpMinutes": {
+            "min": 0,
+            "max": 1
+          },
+          "peakMinutes": {
+            "min": 0,
+            "max": 1
+          },
+          "offsetMinutes": {
+            "min": 1,
+            "max": 5
+          },
+          "totalMinutes": {
+            "min": 1,
+            "max": 5
+          },
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "notes": "Lasts a minute or two. Breathe normal air between balloons and sit down; never inhale straight from a canister or cracker.",
+      "comingUp": {
+        "other": {
+          "text": "Hits within seconds and is gone within a few minutes. Sit down before a balloon, and take some normal breaths between them so you don't pass out.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      },
+      "sourceIds": [
+        "tripsit",
+        "psychonautwiki"
+      ]
+    }
+  ],
+  "medications": [
+    {
+      "id": "rx-ssri",
+      "name": "SSRI antidepressants",
+      "examples": [
+        "sertraline",
+        "fluoxetine",
+        "citalopram",
+        "escitalopram",
+        "paroxetine"
+      ],
+      "notes": "Can make MDMA and psychedelics feel weaker. Taking more to make up for it adds risk without much effect. Don't stop your medicine for a festival without talking to your prescriber.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-maoi",
+      "name": "MAOI antidepressants",
+      "examples": [
+        "phenelzine",
+        "tranylcypromine",
+        "isocarboxazid",
+        "moclobemide",
+        "selegiline"
+      ],
+      "notes": "One of the most dangerous medicines to mix with MDMA or stimulants: blood pressure can spike to a crisis. Some drinks also react with it.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-benzodiazepine",
+      "name": "Benzodiazepines",
+      "examples": [
+        "diazepam",
+        "alprazolam",
+        "lorazepam",
+        "clonazepam",
+        "temazepam"
+      ],
+      "notes": "With GHB or alcohol, the effects stack fast and unpredictably and can knock you out.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-opioid",
+      "name": "Opioid painkillers",
+      "examples": [
+        "codeine",
+        "morphine",
+        "oxycodone",
+        "methadone",
+        "buprenorphine"
+      ],
+      "notes": "With GHB, alcohol or ketamine, you can pass out and stop breathing. Stimulants can hide an opioid until they wear off.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-tramadol",
+      "name": "Tramadol",
+      "examples": [
+        "tramadol"
+      ],
+      "notes": "Makes seizures more likely with MDMA, stimulants and psychedelics, and stacks dangerously with depressants.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-lithium",
+      "name": "Lithium",
+      "examples": [
+        "lithium carbonate",
+        "lithium citrate"
+      ],
+      "notes": "Many reports of seizures with psychedelics, and MDMA brings a high risk of serotonin syndrome.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-pregabalin",
+      "name": "Pregabalin and gabapentinoids",
+      "examples": [
+        "pregabalin"
+      ],
+      "notes": "With GHB it stacks fast and can knock you out. With stimulants and MDMA, seizures are more likely.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-adhd-stimulant",
+      "name": "ADHD stimulants",
+      "examples": [
+        "lisdexamfetamine",
+        "dexamfetamine",
+        "mixed amphetamine salts",
+        "methylphenidate"
+      ],
+      "notes": "Rated as amphetamine, which most of these are. Methylphenidate is not rated separately, so it gets the same ratings. Speed on top is more of the same drug.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "rx-hiv-booster",
+      "name": "HIV boosters (ritonavir, cobicistat)",
+      "examples": [
+        "ritonavir",
+        "cobicistat",
+        "darunavir/cobicistat",
+        "elvitegravir/cobicistat",
+        "lopinavir/ritonavir",
+        "atazanavir/cobicistat"
+      ],
+      "notes": "Boosters slow how the body clears many party drugs, so a usual dose can be much stronger and last longer. Most other HIV medicines interact less, but check yours with your HIV clinic.",
+      "sourceIds": [
+        "bracchi-2015"
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "substanceIds": [
+        "2c-b",
+        "amphetamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "cannabis"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "The stimulant adds strain on the heart and can make the 2C-B trip more anxious and harder to handle.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "Many reports of seizures and psychosis from this combination.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "amphetamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "cocaine"
+      ],
+      "risk": "unsafe",
+      "note": "In the body they form a third compound that strains the heart more than either alone.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "ghb"
+      ],
+      "risk": "dangerous",
+      "note": "Both slow your breathing, and together they can make you pass out and stop breathing, even hours apart.",
+      "sourceIds": [
+        "tripsit",
+        "dancesafe"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "ketamine"
+      ],
+      "risk": "dangerous",
+      "note": "Together they raise the risk of passing out, vomiting and choking.",
+      "sourceIds": [
+        "tripsit",
+        "dancesafe"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "Mephedrone hides how drunk you are, so it is easy to drink far more than you realise.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "nitrous-oxide"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-benzodiazepine"
+      ],
+      "risk": "dangerous",
+      "note": "They strengthen each other fast and unpredictably and can knock you out. If someone passes out, put them in the recovery position.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-maoi"
+      ],
+      "risk": "unsafe",
+      "note": "Some drinks contain tyramine, which with an MAOI can push blood pressure dangerously high.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "Breathing can slow or stop. If someone passes out, put them in the recovery position and get help.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "Alcohol can add to the drowsiness and slower thinking some antidepressants cause.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "cannabis"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "ghb"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "ketamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "Two stimulants together strain the heart and raise the risk of overheating, and keep you up far longer.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-hiv-booster"
+      ],
+      "risk": "unsafe",
+      "note": "Boosters can raise stimulant levels; deaths have been reported with methamphetamine. Start much lower.",
+      "sourceIds": [
+        "bracchi-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "Blood pressure can spike to a crisis, and the effects can be much stronger and longer than expected.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "Both make seizures more likely.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "ghb"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "ketamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "Two stimulants together push heart rate and body temperature higher, and the cravings for both feed each other.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "Cocaine lets you take more opioid than usual. When it wears off first, the opioid can stop your breathing.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "Both make seizures more likely.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "ketamine"
+      ],
+      "risk": "dangerous",
+      "note": "Together they can make you pass out and stop breathing.",
+      "sourceIds": [
+        "tripsit",
+        "dancesafe"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "nitrous-oxide"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-benzodiazepine"
+      ],
+      "risk": "dangerous",
+      "note": "They strengthen each other fast and unpredictably and can knock you out. If someone passes out, put them in the recovery position.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-hiv-booster"
+      ],
+      "risk": "dangerous",
+      "note": "A small dose of GHB caused a near-fatal reaction in someone on ritonavir. With a booster, take far less or avoid it.",
+      "sourceIds": [
+        "bracchi-2015",
+        "harrington-1999"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "Breathing can slow or stop. If someone passes out, put them in the recovery position and get help.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-pregabalin"
+      ],
+      "risk": "dangerous",
+      "note": "They strengthen each other fast and unpredictably and can knock you out, with a higher seizure risk.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "The stimulant can hide how heavy the ketamine is, making it easier to take too much of either.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-benzodiazepine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-hiv-booster"
+      ],
+      "risk": "dangerous",
+      "note": "Boosters can raise ketamine levels a lot, making it much easier to go too deep or pass out.",
+      "sourceIds": [
+        "bracchi-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "Both can cause vomiting and passing out, and choking on vomit is a serious risk. Use the recovery position.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "Many reports of seizures and psychosis from this combination.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "mephedrone"
+      ],
+      "risk": "dangerous",
+      "note": "Two stimulants that both raise heart rate and body temperature; together the risk of overheating rises sharply.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-hiv-booster"
+      ],
+      "risk": "dangerous",
+      "note": "Boosters slow how fast the body clears MDMA, so a normal dose can hit far harder and last longer. Deaths have been reported.",
+      "sourceIds": [
+        "bracchi-2015",
+        "harrington-1999",
+        "henry-hill-1998"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "High risk of serotonin syndrome.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "Blood pressure can spike to a crisis, and the effects can be much stronger and longer than expected.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "Seizures are more likely, and when MDMA wears off first, a high pregabalin dose can slow breathing.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "Both make seizures more likely.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-hiv-booster"
+      ],
+      "risk": "unsafe",
+      "note": "Boosters can raise mephedrone levels, so a usual dose can be much stronger. Start much lower.",
+      "sourceIds": [
+        "bracchi-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit has no rating for this pair, so this uses its rating for amphetamines, the closest class it rates (dangerous).",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "Both make seizures more likely.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-tramadol"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "Many reports of seizures and psychosis from this combination.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    }
+  ]
+}

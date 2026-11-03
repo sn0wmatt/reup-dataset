@@ -1,0 +1,316 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sn0wmatt/ReUp/specs/001-plan-and-log-doses/contracts/substance-dataset.schema.json",
+  "title": "ReUp SubstanceDataset",
+  "description": "Pluggable substance timing and interaction data. Phase durations (onset, comeUp, peak, offset) are sequential; totalMinutes and minRedoseMinutes are measured from the time taken. Missing fields mean 'no data'. Cross-reference rules (source ids exist, substance ids in interactions exist, unique ids) are enforced by the app's validator.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "datasetVersion",
+    "publishedAt",
+    "sources",
+    "substances",
+    "interactions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "datasetVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The dataset's own licence, e.g. CC BY-SA 4.0. Each source's terms are in sources[].license."
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "Where the dataset is published for reuse."
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "retrievedAt",
+          "license",
+          "credit"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "retrievedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Licence or terms of use, e.g. 'TripSit: free for non-commercial use with credit and link back'."
+          },
+          "credit": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Exact credit line shown in the app's Sources & credits screen and on substance details."
+          },
+          "creditUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "Link the credit must point to, if different from url."
+          }
+        }
+      }
+    },
+    "substances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "routes",
+          "sourceIds"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "routes": {
+            "type": "object",
+            "minProperties": 1,
+            "propertyNames": {
+              "enum": [
+                "oral",
+                "insufflated",
+                "sublingual",
+                "smoked",
+                "vaporised",
+                "rectal",
+                "other"
+              ]
+            },
+            "additionalProperties": {
+              "$ref": "#/$defs/timingProfile"
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "sourceIds": {
+            "$ref": "#/$defs/sourceIds"
+          },
+          "comingUp": {
+            "type": "object",
+            "description": "Plain-language description of what usually happens while this substance comes up, shown on the too-soon warning (FR-010a). Keyed by route; must cite sources.",
+            "additionalProperties": {
+              "type": "object",
+              "required": [
+                "text",
+                "sourceIds"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 280
+                },
+                "sourceIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "propertyNames": {
+              "enum": [
+                "oral",
+                "insufflated",
+                "sublingual",
+                "smoked",
+                "vaporised",
+                "rectal",
+                "other"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "medications": {
+      "description": "Prescription medicine classes users can list (FR-010b). Interactions name them by id like substances; a medication is never paired with another medication.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "notes",
+          "sourceIds"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^rx-[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "substanceIds",
+          "risk",
+          "note",
+          "sourceIds"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "substanceIds": {
+            "type": "array",
+            "minItems": 2,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "risk": {
+            "enum": [
+              "caution",
+              "unsafe",
+              "dangerous"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceIds": {
+            "$ref": "#/$defs/sourceIds"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "minuteRange": {
+      "type": "object",
+      "required": [
+        "min",
+        "max"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "description": "Validator also requires min <= max."
+    },
+    "timingProfile": {
+      "type": "object",
+      "required": [
+        "sourceIds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "onsetMinutes": {
+          "$ref": "#/$defs/minuteRange"
+        },
+        "comeUpMinutes": {
+          "$ref": "#/$defs/minuteRange"
+        },
+        "peakMinutes": {
+          "$ref": "#/$defs/minuteRange"
+        },
+        "offsetMinutes": {
+          "$ref": "#/$defs/minuteRange"
+        },
+        "totalMinutes": {
+          "$ref": "#/$defs/minuteRange"
+        },
+        "minRedoseMinutes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        }
+      }
+    }
+  }
+}

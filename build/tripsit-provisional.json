@@ -1,0 +1,1384 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "0.1.0-provisional",
+  "publishedAt": "2026-11-03",
+  "sources": [
+    {
+      "id": "tripsit",
+      "title": "TripSit",
+      "url": "https://github.com/TripSit/drugs",
+      "retrievedAt": "2026-11-03",
+      "license": "No licence published. Used provisionally for development; permission to be requested before release.",
+      "credit": "Drug timings and combination ratings from TripSit (tripsit.me). Provisional, not yet cross-checked.",
+      "creditUrl": "https://tripsit.me"
+    }
+  ],
+  "substances": [
+    {
+      "id": "mdma",
+      "name": "MDMA",
+      "aliases": [
+        "adam",
+        "ecstasy",
+        "mandy",
+        "md",
+        "molly",
+        "x"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "rectal": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 70
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "ketamine",
+      "name": "Ketamine",
+      "aliases": [
+        "k",
+        "ket",
+        "kittens",
+        "kitty",
+        "special k"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 8,
+            "max": 20
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 10,
+            "max": 75
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 120
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "cocaine",
+      "name": "Cocaine",
+      "aliases": [
+        "coke"
+      ],
+      "routes": {
+        "insufflated": {
+          "totalMinutes": {
+            "min": 60,
+            "max": 90
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "amphetamine",
+      "name": "Amphetamine",
+      "aliases": [
+        "amfetamine",
+        "amph",
+        "amphetamin",
+        "amphetamines",
+        "hearts",
+        "pep"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 5,
+            "max": 10
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 360
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 480
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "mephedrone",
+      "name": "Mephedrone",
+      "aliases": [
+        "4-methylmethcathinone",
+        "4-mmc",
+        "4mmc",
+        "m-cat",
+        "meow meow"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "totalMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 45
+          },
+          "totalMinutes": {
+            "min": 120,
+            "max": 180
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "lsd",
+      "name": "LSD",
+      "aliases": [
+        "acid",
+        "cid",
+        "lsd-25",
+        "lucy"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 45,
+            "max": 90
+          },
+          "totalMinutes": {
+            "min": 540,
+            "max": 840
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "psilocybin-mushrooms",
+      "name": "Mushrooms",
+      "aliases": [
+        "mushroom",
+        "psilocybin",
+        "psylocybin",
+        "shrooms"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 60,
+            "max": 60
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 360
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "2c-b",
+      "name": "2C-B",
+      "aliases": [
+        "2-cb",
+        "2cb",
+        "bees",
+        "nexus"
+      ],
+      "routes": {
+        "insufflated": {
+          "onsetMinutes": {
+            "min": 1,
+            "max": 10
+          },
+          "totalMinutes": {
+            "min": 120,
+            "max": 240
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 75
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 480
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "rectal": {
+          "onsetMinutes": {
+            "min": 5,
+            "max": 20
+          },
+          "totalMinutes": {
+            "min": 180,
+            "max": 300
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "ghb",
+      "name": "GHB",
+      "aliases": [],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 20,
+            "max": 60
+          },
+          "totalMinutes": {
+            "min": 90,
+            "max": 150
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "cannabis",
+      "name": "Cannabis",
+      "aliases": [
+        "dagga",
+        "hash",
+        "marijuana",
+        "thc",
+        "weed"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 30,
+            "max": 120
+          },
+          "totalMinutes": {
+            "min": 240,
+            "max": 600
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "smoked": {
+          "onsetMinutes": {
+            "min": 1,
+            "max": 10
+          },
+          "totalMinutes": {
+            "min": 60,
+            "max": 240
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "alcohol",
+      "name": "Alcohol",
+      "aliases": [
+        "beer",
+        "booze",
+        "ethanol",
+        "etoh",
+        "hooch"
+      ],
+      "routes": {
+        "oral": {
+          "onsetMinutes": {
+            "min": 15,
+            "max": 30
+          },
+          "totalMinutes": {
+            "min": 90,
+            "max": 180
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "id": "nitrous-oxide",
+      "name": "Nitrous oxide",
+      "aliases": [
+        "hippy crack",
+        "laughing_gas",
+        "n20",
+        "n2o",
+        "nitrous oxide",
+        "nos"
+      ],
+      "routes": {
+        "other": {
+          "onsetMinutes": {
+            "min": 0,
+            "max": 1
+          },
+          "totalMinutes": {
+            "min": 1,
+            "max": 5
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "notes": "Provisional timings from TripSit. Come-up and peak not yet researched.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    }
+  ],
+  "medications": [
+    {
+      "id": "rx-ssri",
+      "tripsitClass": "ssris"
+    },
+    {
+      "id": "rx-maoi",
+      "tripsitClass": "maois"
+    },
+    {
+      "id": "rx-benzodiazepine",
+      "tripsitClass": "benzodiazepines"
+    },
+    {
+      "id": "rx-opioid",
+      "tripsitClass": "opioids"
+    },
+    {
+      "id": "rx-tramadol",
+      "tripsitClass": "tramadol"
+    },
+    {
+      "id": "rx-lithium",
+      "tripsitClass": "lithium"
+    },
+    {
+      "id": "rx-pregabalin",
+      "tripsitClass": "pregabalin"
+    },
+    {
+      "id": "rx-adhd-stimulant",
+      "tripsitClass": "amphetamines"
+    }
+  ],
+  "interactions": [
+    {
+      "substanceIds": [
+        "2c-b",
+        "amphetamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "cannabis"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "amphetamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "cocaine"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "ghb"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "ketamine"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "nitrous-oxide"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-benzodiazepine"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-maoi"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "cannabis"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "ghb"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "ketamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "cocaine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "ghb"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "ketamine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "lsd"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "psilocybin-mushrooms"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "ketamine"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "mdma"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "nitrous-oxide"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-benzodiazepine"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-pregabalin"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-benzodiazepine"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-opioid"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "mephedrone"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "mephedrone"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-maoi"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit has no rating for this pair, so this uses its rating for amphetamines, the closest class it rates (dangerous).",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-tramadol"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-opioid"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-pregabalin"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "nitrous-oxide",
+        "rx-tramadol"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "TripSit rates this combination as caution.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-lithium"
+      ],
+      "risk": "dangerous",
+      "note": "TripSit rates this combination as dangerous.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-tramadol"
+      ],
+      "risk": "unsafe",
+      "note": "TripSit rates this combination as unsafe.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    }
+  ]
+}
