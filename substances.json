@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "0.4.0",
+  "datasetVersion": "0.5.0",
   "publishedAt": "2026-11-03",
   "license": "CC BY-SA 4.0 (TripSit figures under TripSit's terms)",
   "homepage": "https://github.com/sn0wmatt/reup-dataset",
@@ -11,7 +11,7 @@
       "url": "https://github.com/TripSit/drugs",
       "retrievedAt": "2026-11-03",
       "license": "TripSit factsheet terms: free for non-commercial use with credit and a link back. Written confirmation for ReUp to be requested before release.",
-      "credit": "Onset and duration ranges and combination ratings from TripSit (tripsit.me).",
+      "credit": "Onset, duration and after-effect ranges, dose ranges, effect lists and combination ratings from TripSit (tripsit.me).",
       "creditUrl": "https://tripsit.me"
     },
     {
@@ -19,8 +19,8 @@
       "title": "PsychonautWiki",
       "url": "https://psychonautwiki.org",
       "retrievedAt": "2026-11-03",
-      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing and tolerance figures, cross-tolerance, and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
-      "credit": "Onset, come-up, peak and offset ranges, tolerance times and cross-tolerance, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days by ReUp.",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing, dose and tolerance figures, cross-tolerance, the effects it lists and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp; effects and safety notes reworded in ReUp's own words. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
+      "credit": "Onset, come-up, peak, offset and after-effect ranges, dose ranges, tolerance times and cross-tolerance, effects and safety facts, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days, and text reworded, by ReUp.",
       "creditUrl": "https://psychonautwiki.org"
     },
     {
@@ -28,8 +28,8 @@
       "title": "DanceSafe drug information",
       "url": "https://dancesafe.org",
       "retrievedAt": "2026-11-03",
-      "license": "All rights reserved. Used for facts only (timings and redose waits); all wording is ReUp's own.",
-      "credit": "Redose guidance and timing checks from DanceSafe (dancesafe.org).",
+      "license": "All rights reserved. Used for facts only (timings, doses, redose waits and safety advice); all wording is ReUp's own.",
+      "credit": "Redose guidance, safety advice and timing checks from DanceSafe (dancesafe.org).",
       "creditUrl": "https://dancesafe.org"
     },
     {
@@ -100,6 +100,10 @@
             "min": 180,
             "max": 300
           },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 4320
+          },
           "sourceIds": [
             "tripsit"
           ]
@@ -125,6 +129,10 @@
             "min": 180,
             "max": 360
           },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 4320
+          },
           "minRedoseMinutes": 90,
           "redoseAmountPercent": {
             "min": 33,
@@ -144,6 +152,10 @@
           "totalMinutes": {
             "min": 180,
             "max": 300
+          },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 4320
           },
           "sourceIds": [
             "tripsit"
@@ -199,6 +211,184 @@
           "peiro2013"
         ]
       },
+      "category": "Stimulant and empathogen",
+      "effects": {
+        "summary": "Warm, open and chatty, with energy and music and touch feeling stronger. Also jaw clenching, sweating, a fast heartbeat and wide pupils.",
+        "feelings": [
+          "Euphoria and warmth",
+          "Feeling close to people",
+          "Chattiness",
+          "Energy to dance",
+          "Music and touch feel stronger",
+          "Less anxiety"
+        ],
+        "sideEffects": [
+          "Jaw clenching and teeth grinding",
+          "Sweating and overheating",
+          "Fast heartbeat",
+          "Higher blood pressure",
+          "Wide pupils, wobbly vision",
+          "Nausea",
+          "Dry mouth",
+          "Trouble peeing",
+          "Urge to take more"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "afterEffects": {
+        "text": "Tiredness, low mood, irritability and poor sleep are common for a day or two. Some people feel flat or tearful for up to a week. Rest, eat well and go easy on yourself.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "mg",
+          "threshold": {
+            "min": 20,
+            "max": 20
+          },
+          "light": {
+            "min": 20,
+            "max": 80
+          },
+          "common": {
+            "min": 80,
+            "max": 120
+          },
+          "strong": {
+            "min": 120,
+            "max": 150
+          },
+          "heavy": {
+            "min": 150
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "unit": "mg",
+          "light": {
+            "min": 30,
+            "max": 70
+          },
+          "common": {
+            "min": 70,
+            "max": 120
+          },
+          "strong": {
+            "min": 120,
+            "max": 165
+          },
+          "heavy": {
+            "min": 165
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        "rectal": {
+          "unit": "mg",
+          "light": {
+            "min": 30,
+            "max": 70
+          },
+          "common": {
+            "min": 70,
+            "max": 120
+          },
+          "strong": {
+            "min": 120,
+            "max": 165
+          },
+          "heavy": {
+            "min": 165
+          },
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Test it first. Pills and powder vary a lot in strength and can contain other drugs. Use a reagent kit, or a drug-checking service if the festival has one.",
+          "sourceIds": [
+            "tripsit",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Start low, with half a pill or less until you know how strong it is. A common dose of pure MDMA is around 80 to 125 mg.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "If you redose, take one smaller dose, a third to a half of the first, no sooner than 90 minutes in. More than that mostly adds side effects and a worse comedown.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Sip about 200 to 500 ml of water an hour, up to about 700 ml if you're dancing hard. Drinking much more than that can be as dangerous as too little. Electrolyte drinks or salty snacks help.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Take breaks from dancing somewhere cool. Overheating is one of the main dangers, and heat, crowds, hard dancing and other stimulants all make it worse.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Leave at least a few weeks between uses, ideally a few months. Using often makes it work less and makes the low days afterwards worse.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Overheating, confusion, fainting or a seizure: get the medics now and help cool them down.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "A bad headache, vomiting or confusion after drinking a lot of water.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Stiff or twitching muscles with a high temperature and agitation, especially with antidepressants.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Chest pain, or a racing or uneven heartbeat that won't settle.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -237,6 +427,10 @@
             "min": 60,
             "max": 120
           },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 720
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki",
@@ -263,6 +457,10 @@
           "totalMinutes": {
             "min": 60,
             "max": 500
+          },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 480
           },
           "sourceIds": [
             "tripsit",
@@ -297,7 +495,9 @@
           "min": 28,
           "max": 28
         },
-        "crossToleranceWith": [],
+        "crossToleranceWith": [
+          "nitrous-oxide"
+        ],
         "sourceIds": [
           "psychonautwiki"
         ]
@@ -308,6 +508,153 @@
           "psychonautwiki"
         ]
       },
+      "category": "Dissociative",
+      "effects": {
+        "summary": "Floaty and detached, with a numb body, wobbly walking and blurred vision. More can cut you off from your surroundings (a k-hole).",
+        "feelings": [
+          "Floaty, dreamy feeling",
+          "Detached from your body",
+          "Music and visuals change",
+          "Euphoria at low doses"
+        ],
+        "sideEffects": [
+          "Numbness",
+          "Poor coordination",
+          "Dizziness and blurred vision",
+          "Nausea and vomiting",
+          "Confusion",
+          "Can't move or talk (k-hole)"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "afterEffects": {
+        "text": "Grogginess and poor coordination can last a few hours after it wears off. Frequent use can damage the bladder: pain, needing to pee often, or blood in your pee.",
+        "sourceIds": [
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "doses": {
+        "insufflated": {
+          "unit": "mg",
+          "threshold": {
+            "min": 5,
+            "max": 5
+          },
+          "light": {
+            "min": 10,
+            "max": 30
+          },
+          "common": {
+            "min": 30,
+            "max": 75
+          },
+          "strong": {
+            "min": 75,
+            "max": 150
+          },
+          "heavy": {
+            "min": 150
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "oral": {
+          "unit": "mg",
+          "threshold": {
+            "min": 50,
+            "max": 50
+          },
+          "light": {
+            "min": 50,
+            "max": 100
+          },
+          "common": {
+            "min": 100,
+            "max": 300
+          },
+          "strong": {
+            "min": 300,
+            "max": 450
+          },
+          "heavy": {
+            "min": 450
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Sit or lie down before it kicks in, somewhere safe, away from crowds, stairs and water. Falls and choking are the main dangers.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Start with a small bump and let it fully come up before deciding on more. Around 100 mg snorted is often enough for a k-hole.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Don't mix with alcohol, GHB or benzos. Together they can cause blackouts, vomiting and passing out.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Don't take big doses alone or in a crowd. Have a friend with you who knows what you've taken.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Use your own straw, and rinse your nose with salt water once the peak has passed.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "If peeing hurts, or you need to go much more often, stop using it and see a doctor.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Can't be woken, or vomits while out of it: put them on their side and get the medics.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Slow or noisy breathing, especially after mixing with alcohol or GHB.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "A bad fall or a knock to the head.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -341,6 +688,10 @@
           "totalMinutes": {
             "min": 15,
             "max": 90
+          },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 240
           },
           "sourceIds": [
             "tripsit",
@@ -383,6 +734,122 @@
           "psychonautwiki"
         ]
       },
+      "category": "Stimulant",
+      "effects": {
+        "summary": "A short burst of confidence, energy and talking, then a dip that pulls you to take more. Raises heart rate and blood pressure.",
+        "feelings": [
+          "Confidence",
+          "Energy and alertness",
+          "Talkativeness",
+          "Euphoria"
+        ],
+        "sideEffects": [
+          "Fast heartbeat",
+          "Higher blood pressure",
+          "Overheating",
+          "Irritability or anxiety",
+          "Numb nose or mouth",
+          "Nausea at higher doses",
+          "Strong urge to take more"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "afterEffects": {
+        "text": "The comedown comes quickly: low mood, tiredness and cravings, worse after big or frequent doses. Staying up for days raises the risk of paranoia.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "doses": {
+        "insufflated": {
+          "unit": "mg",
+          "threshold": {
+            "min": 5,
+            "max": 5
+          },
+          "light": {
+            "min": 10,
+            "max": 30
+          },
+          "common": {
+            "min": 30,
+            "max": 60
+          },
+          "strong": {
+            "min": 60,
+            "max": 90
+          },
+          "heavy": {
+            "min": 90
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Its short high drives line after line. Decide your limit before you start and keep the rest out of reach.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Street cocaine is often cut with other drugs, such as levamisole. Test it if you can.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Use your own straw. Shared straws can pass on hepatitis C. Saline spray before and after helps protect your nose.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Hard dancing in the heat, or mixing with other stimulants, adds to overheating and strain on your heart.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Even modest doses can cause sudden heart problems in some people, so start small.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Chest pain, or a racing or uneven heartbeat: get the medics now.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "A sudden severe headache, weakness on one side, or slurred speech.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Overheating, a seizure, or seeing or hearing things that aren't there.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -422,6 +889,10 @@
             "min": 180,
             "max": 360
           },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 720
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -447,6 +918,10 @@
           "totalMinutes": {
             "min": 240,
             "max": 480
+          },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 720
           },
           "sourceIds": [
             "tripsit",
@@ -489,6 +964,144 @@
           "psychonautwiki"
         ]
       },
+      "category": "Stimulant",
+      "effects": {
+        "summary": "Long-lasting energy, focus and talking, less hunger, a fast heartbeat, jaw clenching and trouble sleeping.",
+        "feelings": [
+          "Energy and wakefulness",
+          "Focus",
+          "Talkativeness",
+          "Confidence",
+          "Mild euphoria"
+        ],
+        "sideEffects": [
+          "Fast heartbeat",
+          "Higher blood pressure",
+          "Jaw clenching",
+          "Less hunger",
+          "Racing thoughts",
+          "Trouble sleeping",
+          "Overheating"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Expect a long comedown: tiredness, low mood and poor sleep for the rest of the night and often the next day. Your heart rate can stay raised for hours.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "mg",
+          "threshold": {
+            "min": 2.5,
+            "max": 2.5
+          },
+          "light": {
+            "min": 5,
+            "max": 10
+          },
+          "common": {
+            "min": 10,
+            "max": 25
+          },
+          "strong": {
+            "min": 25,
+            "max": 50
+          },
+          "heavy": {
+            "min": 50
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "unit": "mg",
+          "threshold": {
+            "min": 4,
+            "max": 4
+          },
+          "light": {
+            "min": 6,
+            "max": 15
+          },
+          "common": {
+            "min": 15,
+            "max": 30
+          },
+          "strong": {
+            "min": 30,
+            "max": 50
+          },
+          "heavy": {
+            "min": 50
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Street speed varies a lot in purity, and these doses are for the pure drug. Start small and wait: up to 45 minutes when swallowed.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "It lasts many hours, so a late dose means no sleep. Plan your last one early in the night.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "It hides hunger and thirst. Keep sipping water and eat something during the night.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Take breaks from dancing and stay cool. Overheating is a real risk.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Avoid mixing with other stimulants or with downers; both add strain on your heart.",
+          "sourceIds": [
+            "tripsit"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Chest pain, or a racing or uneven heartbeat: get the medics now.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Overheating, confusion or a seizure.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Paranoia, or seeing or hearing things, that won't settle.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -526,6 +1139,10 @@
             "min": 90,
             "max": 180
           },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 1440
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -551,6 +1168,10 @@
           "totalMinutes": {
             "min": 150,
             "max": 360
+          },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 1440
           },
           "sourceIds": [
             "tripsit",
@@ -599,6 +1220,134 @@
           "psychonautwiki"
         ]
       },
+      "category": "Stimulant and empathogen",
+      "effects": {
+        "summary": "Euphoria, chattiness and energy, with a strong urge to take more. Sweating, a fast heartbeat and cold fingers are common.",
+        "feelings": [
+          "Euphoria",
+          "Chattiness",
+          "Energy",
+          "Feeling close to people"
+        ],
+        "sideEffects": [
+          "Strong urge to take more",
+          "Fast heartbeat",
+          "Sweating and overheating",
+          "Cold or blue fingers and toes",
+          "Jaw clenching",
+          "Anxiety on the comedown"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "The comedown can last for hours and sometimes into the next day, with low mood, anxiety, poor sleep and cravings that make it hard to stop.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "mg",
+          "threshold": {
+            "min": 15,
+            "max": 15
+          },
+          "light": {
+            "min": 50,
+            "max": 100
+          },
+          "common": {
+            "min": 100,
+            "max": 200
+          },
+          "strong": {
+            "min": 200,
+            "max": 300
+          },
+          "heavy": {
+            "min": 300
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "unit": "mg",
+          "threshold": {
+            "min": 5,
+            "max": 5
+          },
+          "light": {
+            "min": 15,
+            "max": 45
+          },
+          "common": {
+            "min": 45,
+            "max": 80
+          },
+          "strong": {
+            "min": 80,
+            "max": 125
+          },
+          "heavy": {
+            "min": 125
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "The urge to redose is strong. Weigh out what you'll allow yourself for the night in advance and leave the rest at home.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Start low. Snorted, it starts within minutes, and strength varies between batches.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Don't mix with antidepressants or with other serotonin drugs such as MDMA.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Stay cool and take breaks. Cold or blue fingers mean it's narrowing your blood vessels.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Chest pain, or a racing or uneven heartbeat: get the medics now.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Overheating, confusion or a seizure.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Fingers or toes turning blue and staying cold or numb.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -634,6 +1383,10 @@
           "totalMinutes": {
             "min": 480,
             "max": 840
+          },
+          "afterEffectsMinutes": {
+            "min": 720,
+            "max": 2880
           },
           "minRedoseMinutes": 180,
           "sourceIds": [
@@ -674,6 +1427,111 @@
           "psychonautwiki"
         ]
       },
+      "category": "Psychedelic",
+      "effects": {
+        "summary": "Changes to sight, sound, time and thinking, with strong emotions. A long trip that builds slowly and makes sleep hard.",
+        "feelings": [
+          "Visual changes, brighter colours",
+          "Time feels different",
+          "Wonder and euphoria",
+          "Deep or racing thoughts",
+          "Strong emotions"
+        ],
+        "sideEffects": [
+          "Anxiety or panic",
+          "Confusion",
+          "Restlessness",
+          "Trouble sleeping afterwards"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Sleep is often hard for hours after the trip ends, and you may feel drained or thoughtful the next day.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "µg",
+          "threshold": {
+            "min": 15,
+            "max": 15
+          },
+          "light": {
+            "min": 15,
+            "max": 75
+          },
+          "common": {
+            "min": 75,
+            "max": 150
+          },
+          "strong": {
+            "min": 150,
+            "max": 300
+          },
+          "heavy": {
+            "min": 300
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "It's slow and long. It can take over an hour to start, so don't take more because it seems weak: a second dose makes the trip longer and stronger.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Tabs vary in strength, and some sold as LSD are other drugs. Test with a reagent kit if you can.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Have a sober friend nearby, especially the first time or at a higher dose, and know where the welfare tent is.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Cannabis and stimulants can make the trip much more intense or anxious. Go easy if you mix.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Avoid it if you or close family have had psychosis, and never mix it with lithium or tramadol.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Panic that won't settle: find a calm friend or the welfare tent. It will pass.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Get medical help for a seizure, or if someone may hurt themselves or others.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -710,6 +1568,10 @@
           "totalMinutes": {
             "min": 240,
             "max": 480
+          },
+          "afterEffectsMinutes": {
+            "min": 60,
+            "max": 1440
           },
           "sourceIds": [
             "tripsit",
@@ -751,6 +1613,108 @@
           "psychonautwiki"
         ]
       },
+      "category": "Psychedelic",
+      "effects": {
+        "summary": "Visual changes, strong emotions, laughter or deep thoughts, and often nausea early on. Mood and setting shape the trip.",
+        "feelings": [
+          "Visual changes, brighter colours",
+          "Laughter and euphoria",
+          "Connected to nature or people",
+          "Deep thoughts",
+          "Strong emotions"
+        ],
+        "sideEffects": [
+          "Nausea while coming up",
+          "Anxiety or panic",
+          "Confusion"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Tiredness and an emotional or thoughtful mood can last into the next day.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "g",
+          "unitNote": "dried Psilocybe cubensis",
+          "threshold": {
+            "min": 0.25,
+            "max": 0.5
+          },
+          "light": {
+            "min": 0.5,
+            "max": 1
+          },
+          "common": {
+            "min": 1,
+            "max": 2.5
+          },
+          "strong": {
+            "min": 2.5,
+            "max": 5
+          },
+          "heavy": {
+            "min": 5
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Strength varies a lot between mushrooms and batches. Start small and wait at least 2 hours before deciding to take more.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Be sure what they are. Wild mushrooms are easily mistaken for poisonous ones.",
+          "sourceIds": [
+            "tripsit"
+          ]
+        },
+        {
+          "text": "Have a sober friend nearby, especially the first time or at a higher dose, and know where the welfare tent is.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Cannabis and stimulants can make the trip much more intense or anxious. Go easy if you mix.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Avoid them if you or close family have had psychosis, and never mix them with lithium or tramadol.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Panic that won't settle: find a calm friend or the welfare tent. It will pass.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Get medical help for a seizure, or if someone may hurt themselves or others.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -787,6 +1751,10 @@
             "min": 120,
             "max": 360
           },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 240
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -813,6 +1781,10 @@
             "min": 240,
             "max": 480
           },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 240
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki",
@@ -827,6 +1799,10 @@
           "totalMinutes": {
             "min": 180,
             "max": 420
+          },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 240
           },
           "sourceIds": [
             "tripsit",
@@ -861,6 +1837,146 @@
           ]
         }
       },
+      "category": "Psychedelic",
+      "effects": {
+        "summary": "Visuals and body buzz with energy and euphoria; more brings stronger visuals. Nausea while coming up is common.",
+        "feelings": [
+          "Visuals, brighter colours",
+          "Body buzz, heightened touch",
+          "Euphoria and giggling",
+          "Energy",
+          "Feeling close to people"
+        ],
+        "sideEffects": [
+          "Nausea while coming up",
+          "Sweating or chills",
+          "Muscle tension",
+          "Restlessness",
+          "Confusion",
+          "Trouble sleeping"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Usually mild: a few hours of tiredness or trouble sleeping after it wears off.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "mg",
+          "threshold": {
+            "min": 5,
+            "max": 5
+          },
+          "light": {
+            "min": 10,
+            "max": 15
+          },
+          "common": {
+            "min": 15,
+            "max": 25
+          },
+          "strong": {
+            "min": 25,
+            "max": 45
+          },
+          "heavy": {
+            "min": 45
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "insufflated": {
+          "unit": "mg",
+          "light": {
+            "min": 5,
+            "max": 8
+          },
+          "common": {
+            "min": 8,
+            "max": 12
+          },
+          "strong": {
+            "min": 12,
+            "max": 23
+          },
+          "heavy": {
+            "min": 23
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "rectal": {
+          "unit": "mg",
+          "light": {
+            "min": 5,
+            "max": 8
+          },
+          "common": {
+            "min": 8,
+            "max": 12
+          },
+          "strong": {
+            "min": 12,
+            "max": 23
+          },
+          "heavy": {
+            "min": 23
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Very dose-sensitive: a few milligrams make a big difference, and a snorted dose is about half a swallowed one.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Powder or pills sold as 2C-B can be something else. Test it if you can.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Avoid hard exertion, and keep an eye on your heart rate and temperature, especially if you have a heart condition.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Have a sober friend around, and avoid mixing with stimulants, cannabis, lithium or tramadol.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Overheating, confusion or a seizure: get the medics now.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Panic that won't settle: find a calm friend or the welfare tent. It will pass.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -892,6 +2008,10 @@
           "totalMinutes": {
             "min": 90,
             "max": 170
+          },
+          "afterEffectsMinutes": {
+            "min": 120,
+            "max": 240
           },
           "minRedoseMinutes": 120,
           "sourceIds": [
@@ -925,6 +2045,123 @@
           "psychonautwiki"
         ]
       },
+      "category": "Depressant",
+      "effects": {
+        "summary": "Relaxed, euphoric and sociable, like alcohol. The gap between a good dose and passing out is very small.",
+        "feelings": [
+          "Relaxation",
+          "Euphoria",
+          "Sociability",
+          "Lower inhibitions"
+        ],
+        "sideEffects": [
+          "Dizziness",
+          "Poor coordination",
+          "Nausea and vomiting",
+          "Drowsiness",
+          "Memory loss",
+          "Sudden passing out"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "afterEffects": {
+        "text": "Some people feel groggy for a few hours. Regular use builds dependence, and stopping suddenly after daily use can bring withdrawal that needs a doctor.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki",
+          "dancesafe"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "g",
+          "unitNote": "GHB, not GBL",
+          "threshold": {
+            "min": 0.5,
+            "max": 0.5
+          },
+          "light": {
+            "min": 0.5,
+            "max": 1
+          },
+          "common": {
+            "min": 1,
+            "max": 2.5
+          },
+          "strong": {
+            "min": 2.5,
+            "max": 4
+          },
+          "heavy": {
+            "min": 4
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Measure every dose with an oral syringe, and shake the bottle first: strong liquid can settle at the bottom.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Wait at least 2 hours before taking more. Many overdoses come from redosing too soon.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Never mix with alcohol, even a little, or with other downers. It can knock you out, even hours apart.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Grams and millilitres aren't the same, and GBL is much stronger than GHB. Check which one you have.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Dilute each dose in water or juice and drink it straight away.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "Don't use it alone. If you feel dizzy or sick, tell someone and lie on your side.",
+          "sourceIds": [
+            "dancesafe"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Can't be woken: put them on their side and call the medics. Don't leave them to sleep it off.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "A seizure, slow breathing, or vomiting while drowsy.",
+          "sourceIds": [
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki",
@@ -963,6 +2200,10 @@
             "min": 240,
             "max": 600
           },
+          "afterEffectsMinutes": {
+            "min": 360,
+            "max": 1440
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -988,6 +2229,10 @@
           "totalMinutes": {
             "min": 60,
             "max": 300
+          },
+          "afterEffectsMinutes": {
+            "min": 45,
+            "max": 1440
           },
           "sourceIds": [
             "tripsit",
@@ -1027,6 +2272,135 @@
           "psychonautwiki"
         ]
       },
+      "category": "Cannabinoid",
+      "effects": {
+        "summary": "Relaxed, giggly or hungry, with changes to time and senses. Edibles start late and hit harder. Anxiety or paranoia can happen.",
+        "feelings": [
+          "Relaxation",
+          "Giggles and euphoria",
+          "Hunger",
+          "Music and food feel richer",
+          "Creativity"
+        ],
+        "sideEffects": [
+          "Anxiety or paranoia",
+          "Nausea",
+          "Sleepiness"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Grogginess can last into the next morning, and longer after edibles.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "smoked": {
+          "unit": "mg",
+          "unitNote": "THC",
+          "threshold": {
+            "min": 0.4,
+            "max": 0.4
+          },
+          "light": {
+            "min": 0.4,
+            "max": 2
+          },
+          "common": {
+            "min": 2,
+            "max": 4
+          },
+          "strong": {
+            "min": 4,
+            "max": 10
+          },
+          "heavy": {
+            "min": 10
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        "oral": {
+          "unit": "mg",
+          "unitNote": "THC",
+          "threshold": {
+            "min": 1,
+            "max": 1
+          },
+          "light": {
+            "min": 2.5,
+            "max": 5
+          },
+          "common": {
+            "min": 5,
+            "max": 10
+          },
+          "strong": {
+            "min": 10,
+            "max": 25
+          },
+          "heavy": {
+            "min": 25
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Edibles can take up to 2 hours to kick in. Have a small piece and wait before having more.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Strength varies a lot between products. Start small, especially if you don't use it often.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "It can make psychedelics and stimulants much more intense or anxious. Go easy if you mix.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "If it gets too much, find a quiet spot, sit down and sip water. It passes with time.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Avoid it if you or close family have had psychosis.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Fainting or chest pain: get the medics.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Panic that won't settle: find a calm friend or the welfare tent.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki"
@@ -1064,6 +2438,10 @@
             "min": 90,
             "max": 300
           },
+          "afterEffectsMinutes": {
+            "min": 360,
+            "max": 2880
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -1096,9 +2474,106 @@
           "psychonautwiki"
         ]
       },
+      "category": "Depressant",
+      "effects": {
+        "summary": "Relaxed and less inhibited at first, then slower reactions, poor balance and judgement. Dehydrating, and risky with downers.",
+        "feelings": [
+          "Relaxation",
+          "Mood lift",
+          "Sociability",
+          "Lower inhibitions"
+        ],
+        "sideEffects": [
+          "Slurred speech",
+          "Poor balance",
+          "Poor judgement",
+          "Drowsiness",
+          "Flushed skin",
+          "Memory loss",
+          "Nausea and vomiting"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "A hangover the next day: headache, tiredness, nausea and low mood, sometimes into the day after.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "oral": {
+          "unit": "g",
+          "unitNote": "pure alcohol",
+          "threshold": {
+            "min": 10,
+            "max": 10
+          },
+          "light": {
+            "min": 10,
+            "max": 20
+          },
+          "common": {
+            "min": 20,
+            "max": 30
+          },
+          "strong": {
+            "min": 30,
+            "max": 40
+          },
+          "heavy": {
+            "min": 40
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Pace yourself and have water between drinks. Spreading drinks over hours keeps you in control.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Never mix with GHB, benzos or opioids, and go easy with ketamine. Together they can stop your breathing.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki",
+            "dancesafe"
+          ]
+        },
+        {
+          "text": "If you take regular medicines, check with a doctor or pharmacist before drinking.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Can't be woken, or breathing is slow: put them on their side and call the medics.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Vomiting while very drowsy or confused.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
-        "psychonautwiki"
+        "psychonautwiki",
+        "dancesafe"
       ]
     },
     {
@@ -1134,6 +2609,10 @@
             "min": 1,
             "max": 5
           },
+          "afterEffectsMinutes": {
+            "min": 15,
+            "max": 30
+          },
           "sourceIds": [
             "tripsit",
             "psychonautwiki"
@@ -1165,6 +2644,104 @@
           "psychonautwiki"
         ]
       },
+      "category": "Dissociative gas",
+      "effects": {
+        "summary": "A brief rush of giggly, floaty, dizzy feelings that fades within minutes. Falling over is common, so sit down.",
+        "feelings": [
+          "Giggles and euphoria",
+          "Floaty, dreamy feeling",
+          "Sounds warp and echo",
+          "Mild visuals"
+        ],
+        "sideEffects": [
+          "Dizziness",
+          "Falling over",
+          "Nausea",
+          "Headache",
+          "Numbness or tingling"
+        ],
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "afterEffects": {
+        "text": "Usually gone within half an hour. Heavy or frequent use can cause lasting numbness and nerve damage by using up vitamin B12.",
+        "sourceIds": [
+          "tripsit",
+          "psychonautwiki"
+        ]
+      },
+      "doses": {
+        "other": {
+          "unit": "g",
+          "unitNote": "gas; one small cartridge holds 8 g",
+          "threshold": {
+            "min": 4,
+            "max": 4
+          },
+          "light": {
+            "min": 4,
+            "max": 8
+          },
+          "common": {
+            "min": 8,
+            "max": 16
+          },
+          "strong": {
+            "min": 16,
+            "max": 40
+          },
+          "heavy": {
+            "min": 40
+          },
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        }
+      },
+      "harmReduction": [
+        {
+          "text": "Sit down before you inhale. Falls are the most common injury.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Breathe normal air between balloons. Nitrous on its own starves you of oxygen.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Only use a balloon, never straight from a canister or tank: the gas comes out freezing cold.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "If you use it often, take vitamin B12, and stop if your hands or feet tingle or go numb.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      ],
+      "getHelpIf": [
+        {
+          "text": "Faints and doesn't come round quickly: get the medics.",
+          "sourceIds": [
+            "psychonautwiki"
+          ]
+        },
+        {
+          "text": "Numbness, tingling or weakness in hands or feet that lasts: see a doctor.",
+          "sourceIds": [
+            "tripsit",
+            "psychonautwiki"
+          ]
+        }
+      ],
       "sourceIds": [
         "tripsit",
         "psychonautwiki"

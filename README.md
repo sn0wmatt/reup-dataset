@@ -1,12 +1,13 @@
 # ReUp substance dataset
 
-Onset, come-up, peak, offset and total-duration ranges, redose waits and combination risks
+Onset, come-up, peak, offset, total-duration and after-effect ranges, redose waits, typical
+dose ranges, effects, safer-use tips, signs to get medical help and combination risks
 for 12 substances commonly taken at music festivals, plus 9
 prescription medicine classes. Every figure cites its source. It is the dataset behind the
 ReUp harm-reduction app for Apple Watch and iPhone, published here so anyone can check it,
 correct it and reuse it.
 
-**Version 0.4.0**, published 2026-11-03.
+**Version 0.5.0**, published 2026-11-03.
 
 > Timings are typical ranges, not guarantees, and are not medical advice. People vary, and
 > doses, purity and mixing change everything. If someone is in trouble, get medical help.
@@ -18,14 +19,17 @@ correct it and reuse it.
 | `substances.json` | The built dataset, exactly as the app ships it. All times are in minutes. |
 | `schema/substance-dataset.schema.json` | JSON Schema for `substances.json`. |
 | `build/research.json` | Hand-curated figures in each source's own units, with the page URL next to each. |
+| `build/details.json` | Per-substance effects, after-effects, dose ranges, safer-use tips and get-help signs, in our own words, with dose and after-effect figures in each source's units. |
 | `build/tripsit-provisional.json` | Onset, duration and combination ratings taken from TripSit's open data. |
 | `CREDITS.md` | Every source, its credit line and its terms. |
 | `LICENSE.md` | How the dataset is licensed. |
 
-`substances.json` is built from the two files in `build/`: TripSit figures first, then
+`substances.json` is built from the three files in `build/`: TripSit figures first, then
 PsychonautWiki, DanceSafe and study figures merged over them. Phase durations (onset,
 come-up, peak, offset) run one after another; `totalMinutes` and `minRedoseMinutes` are
-measured from the time taken. A missing field means no source gave a figure.
+measured from the time taken; `afterEffectsMinutes` runs from the end of the offset. Dose
+ranges come from one source per route and are reported amounts of the pure drug, not a
+recommendation. A missing field means no source gave a figure.
 
 ## Licence
 
