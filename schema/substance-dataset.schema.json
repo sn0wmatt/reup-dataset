@@ -218,6 +218,113 @@
                 "$ref": "#/$defs/sourceIds"
               }
             }
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Plain-language drug class, e.g. 'Stimulant and empathogen'."
+          },
+          "effects": {
+            "type": "object",
+            "description": "What it usually feels like, in our own words, for the 'What are the effects?' view. The watch shows only summary; the phone shows the lists too.",
+            "required": [
+              "summary",
+              "sourceIds"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "summary": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 140
+              },
+              "feelings": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 40
+                }
+              },
+              "sideEffects": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 40
+                }
+              },
+              "sourceIds": {
+                "$ref": "#/$defs/sourceIds"
+              }
+            }
+          },
+          "afterEffects": {
+            "type": "object",
+            "description": "What the hours and days afterwards are usually like, in our own words. Phone only.",
+            "required": [
+              "text",
+              "sourceIds"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 280
+              },
+              "sourceIds": {
+                "$ref": "#/$defs/sourceIds"
+              }
+            }
+          },
+          "doses": {
+            "type": "object",
+            "description": "Typical dose bands per route, from one source per route so bands from different tables are never mixed. Phone only. Amounts are in `unit` (mg, µg or g); unitNote says what was weighed, e.g. 'THC' or 'dried Psilocybe cubensis'. Not a recommendation.",
+            "propertyNames": {
+              "enum": [
+                "oral",
+                "insufflated",
+                "sublingual",
+                "smoked",
+                "vaporised",
+                "rectal",
+                "other"
+              ]
+            },
+            "additionalProperties": {
+              "$ref": "#/$defs/doseTable"
+            }
+          },
+          "harmReduction": {
+            "type": "array",
+            "description": "Practical safety tips, in our own words, most important first. Phone only.",
+            "items": {
+              "$ref": "#/$defs/citedTip"
+            }
+          },
+          "getHelpIf": {
+            "type": "array",
+            "description": "Signs that mean get medical help, in our own words, most urgent first. The watch shows the first two.",
+            "items": {
+              "type": "object",
+              "description": "One warning sign and what to do.",
+              "required": [
+                "text",
+                "sourceIds"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 140
+                },
+                "sourceIds": {
+                  "$ref": "#/$defs/sourceIds"
+                }
+              }
+            }
           }
         }
       }
@@ -351,6 +458,10 @@
         "totalMinutes": {
           "$ref": "#/$defs/minuteRange"
         },
+        "afterEffectsMinutes": {
+          "$ref": "#/$defs/minuteRange",
+          "description": "How long after-effects (comedown, hangover, poor sleep) last once the offset ends."
+        },
         "minRedoseMinutes": {
           "type": "integer",
           "minimum": 0
@@ -396,6 +507,83 @@
         "max": {
           "type": "integer",
           "minimum": 0
+        }
+      }
+    },
+    "citedTip": {
+      "type": "object",
+      "description": "One harm-reduction tip.",
+      "required": [
+        "text",
+        "sourceIds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
+        }
+      }
+    },
+    "doseBand": {
+      "type": "object",
+      "required": [
+        "min"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "description": "An amount range; no max means 'and above'. Validator also requires min <= max."
+    },
+    "doseTable": {
+      "type": "object",
+      "required": [
+        "unit",
+        "sourceIds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "enum": [
+            "mg",
+            "µg",
+            "g",
+            "units"
+          ]
+        },
+        "unitNote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "threshold": {
+          "$ref": "#/$defs/doseBand"
+        },
+        "light": {
+          "$ref": "#/$defs/doseBand"
+        },
+        "common": {
+          "$ref": "#/$defs/doseBand"
+        },
+        "strong": {
+          "$ref": "#/$defs/doseBand"
+        },
+        "heavy": {
+          "$ref": "#/$defs/doseBand"
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/sourceIds"
         }
       }
     }

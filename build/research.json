@@ -8,7 +8,7 @@
       "url": "https://github.com/TripSit/drugs",
       "retrievedAt": "2026-11-03",
       "license": "TripSit factsheet terms: free for non-commercial use with credit and a link back. Written confirmation for ReUp to be requested before release.",
-      "credit": "Onset and duration ranges and combination ratings from TripSit (tripsit.me).",
+      "credit": "Onset, duration and after-effect ranges, dose ranges, effect lists and combination ratings from TripSit (tripsit.me).",
       "creditUrl": "https://tripsit.me"
     },
     {
@@ -16,8 +16,8 @@
       "title": "PsychonautWiki",
       "url": "https://psychonautwiki.org",
       "retrievedAt": "2026-11-03",
-      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing and tolerance figures, cross-tolerance, and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
-      "credit": "Onset, come-up, peak and offset ranges, tolerance times and cross-tolerance, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days by ReUp.",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (https://creativecommons.org/licenses/by-sa/4.0/). Only timing, dose and tolerance figures, cross-tolerance, the effects it lists and which combinations it lists as dangerous are used; no text is copied. Changes: figures selected and converted to minutes and days by ReUp; effects and safety notes reworded in ReUp's own words. ReUp's dataset is shared under the same licence (see the ReUp dataset licence).",
+      "credit": "Onset, come-up, peak, offset and after-effect ranges, dose ranges, tolerance times and cross-tolerance, effects and safety facts, and some combination warnings, from PsychonautWiki (psychonautwiki.org), licensed CC BY-SA 4.0. Figures selected and converted to minutes and days, and text reworded, by ReUp.",
       "creditUrl": "https://psychonautwiki.org"
     },
     {
@@ -25,8 +25,8 @@
       "title": "DanceSafe drug information",
       "url": "https://dancesafe.org",
       "retrievedAt": "2026-11-03",
-      "license": "All rights reserved. Used for facts only (timings and redose waits); all wording is ReUp's own.",
-      "credit": "Redose guidance and timing checks from DanceSafe (dancesafe.org).",
+      "license": "All rights reserved. Used for facts only (timings, doses, redose waits and safety advice); all wording is ReUp's own.",
+      "credit": "Redose guidance, safety advice and timing checks from DanceSafe (dancesafe.org).",
       "creditUrl": "https://dancesafe.org"
     },
     {
@@ -83,7 +83,7 @@
         "insufflated": {"text": "A bump usually hits within a few minutes and peaks within about an hour. Another bump on top can tip you into a k-hole where you can't move or talk safely. Sit down first, and never mix it with alcohol or GHB.", "sourceIds": ["psychonautwiki", "dancesafe"]},
         "oral": {"text": "Swallowed ketamine is slower and less predictable, taking up to an hour or more to start. Not feeling it yet is normal; taking more now can stack into a k-hole. Sit down somewhere safe.", "sourceIds": ["tripsit", "psychonautwiki"]}
       },
-      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Ketamine", "buildsAfter": "repeated use", "half": "14 days", "baseline": "28 days"}, "crossToleranceWith": []},
+      "tolerance": {"psychonautwiki": {"url": "https://psychonautwiki.org/wiki/Ketamine", "buildsAfter": "repeated use", "half": "14 days", "baseline": "28 days"}, "crossToleranceWith": ["nitrous-oxide"]},
       "stacking": {"text": "Each bump lands on top of the last, and the short high makes it easy to keep going. Stacking bumps is how people end up in a k-hole, unable to move or talk safely.", "sourceIds": ["psychonautwiki"]}
     },
     "cocaine": {
