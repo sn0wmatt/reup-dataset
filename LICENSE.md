@@ -11,8 +11,9 @@ The full licence text is in `LICENSE-CC-BY-SA-4.0.txt`.
 - **PsychonautWiki figures** (source id `psychonautwiki`) come from psychonautwiki.org, which is
   licensed CC BY-SA 4.0. Changes made: figures were selected from the duration charts and
   converted to minutes; no PsychonautWiki text is copied.
-- **DanceSafe and study figures** (source ids `dancesafe`, `bracchi-2015`, `henry-hill-1998`,
-  `harrington-1999`) are facts taken from those sources. All wording is ReUp's own.
+- **DanceSafe, study, health service and prescribing information figures** (every other
+  source id, such as `dancesafe`, `bracchi-2015`, `nhs-medicines`, `fda-labels` and the
+  study ids) are facts taken from those sources. All wording is ReUp's own.
 - **Text written by ReUp** (notes, coming-up explanations, interaction notes) and the
   selection and arrangement of the dataset.
 

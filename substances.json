@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "0.5.0",
+  "datasetVersion": "0.6.0",
   "publishedAt": "2026-11-03",
   "license": "CC BY-SA 4.0 (TripSit figures under TripSit's terms)",
   "homepage": "https://github.com/sn0wmatt/reup-dataset",
@@ -76,6 +76,132 @@
       "license": "Journal article, publisher's copyright. Facts only (which combinations are risky and how severe); all wording is ReUp's own.",
       "credit": "Ritonavir with MDMA and GHB case report: Harrington RD, Woodward JA, Hooton TM, Horn JR. Arch Intern Med, 1999;159:2221-4.",
       "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/?term=Life-threatening+interactions+between+HIV-1+protease+inhibitors+and+the+illicit+drugs+MDMA+and+gamma-hydroxybutyrate"
+    },
+    {
+      "id": "nhs-medicines",
+      "title": "NHS medicines A to Z (nhs.uk)",
+      "url": "https://www.nhs.uk/medicines/",
+      "retrievedAt": "2026-11-04",
+      "license": "Crown copyright, NHS website. Facts only; all wording is ReUp's own.",
+      "credit": "Alcohol and recreational drug advice for prescription medicines from the NHS website (nhs.uk/medicines).",
+      "creditUrl": "https://www.nhs.uk/medicines/"
+    },
+    {
+      "id": "fda-labels",
+      "title": "US prescribing information (FDA-approved labels)",
+      "url": "https://www.drugs.com/pro/",
+      "retrievedAt": "2026-11-04",
+      "license": "US government-approved product labelling. Facts only; all wording is ReUp's own.",
+      "credit": "Interaction warnings from US prescribing information: Xyrem (sodium oxybate) and Wellbutrin XL (bupropion).",
+      "creditUrl": "https://www.drugs.com/pro/"
+    },
+    {
+      "id": "liechti-2000-citalopram",
+      "title": "Liechti et al. 2000, citalopram and MDMA",
+      "url": "https://bibliography.maps.org/resources/download/18087",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Citalopram and MDMA findings from Liechti ME, Baumann C, Gamma A, Vollenweider FX, \"Acute psychological effects of MDMA are attenuated by the serotonin uptake inhibitor citalopram\", Neuropsychopharmacology 22(5):513–521, 2000.",
+      "creditUrl": "https://bibliography.maps.org/resources/download/18087"
+    },
+    {
+      "id": "segura-2005",
+      "title": "Segura et al. 2005, paroxetine and MDMA",
+      "url": "https://doi.org/10.2165/00003088-200544060-00006",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Paroxetine and MDMA blood-level findings from Segura M et al., \"Contribution of cytochrome P450 2D6 to MDMA disposition in humans: use of paroxetine as a metabolic inhibitor probe\", Clinical Pharmacokinetics 44(6):649–660, 2005.",
+      "creditUrl": "https://doi.org/10.2165/00003088-200544060-00006"
+    },
+    {
+      "id": "hysek-2012",
+      "title": "Hysek et al. 2012, duloxetine and MDMA",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22574166/",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Duloxetine and MDMA findings from Hysek CM et al., \"Duloxetine inhibits effects of MDMA (ecstasy) in vitro and in humans in a randomized placebo-controlled laboratory study\", PLoS One 7(5):e36476, 2012.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/22574166/"
+    },
+    {
+      "id": "schmid-2015",
+      "title": "Schmid et al. 2015, bupropion and MDMA",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25655950/",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Bupropion and MDMA findings from Schmid Y et al., \"Interactions between bupropion and 3,4-methylenedioxymethamphetamine in healthy subjects\", Journal of Pharmacology and Experimental Therapeutics 353(1):102–111, 2015.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/25655950/"
+    },
+    {
+      "id": "bonson-1996",
+      "title": "Bonson et al. 1996, antidepressants and LSD",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8726753/",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "SSRI and LSD findings from Bonson KR, Buckholtz JW, Murphy DL, \"Chronic administration of serotonergic antidepressants attenuates the subjective effects of LSD in humans\", Neuropsychopharmacology 14(6):425–436, 1996.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/8726753/"
+    },
+    {
+      "id": "bonson-murphy-1996",
+      "title": "Bonson & Murphy 1996, tricyclics, MAOIs, lithium and LSD",
+      "url": "https://bibliography.maps.org/resources/download/20184",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Tricyclic, MAOI and lithium findings with LSD from Bonson KR, Murphy DL, \"Alterations in responses to LSD in humans associated with chronic administration of tricyclic antidepressants, monoamine oxidase inhibitors or lithium\", Behavioural Brain Research 73(1-2):229–233, 1996.",
+      "creditUrl": "https://bibliography.maps.org/resources/download/20184"
+    },
+    {
+      "id": "becker-2022",
+      "title": "Becker et al. 2022, escitalopram and psilocybin",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34743319/",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Escitalopram and psilocybin findings from Becker AM et al., \"Acute effects of psilocybin after escitalopram or placebo pretreatment in a randomized, double-blind, placebo-controlled, crossover study in healthy subjects\", Clinical Pharmacology & Therapeutics 111(4):886–895, 2022.",
+      "creditUrl": "https://pubmed.ncbi.nlm.nih.gov/34743319/"
+    },
+    {
+      "id": "liechti-vollenweider-2000",
+      "title": "Liechti & Vollenweider 2000, haloperidol and MDMA",
+      "url": "https://bibliography.maps.org/resources/download/18088",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Haloperidol and MDMA findings from Liechti ME, Vollenweider FX, \"Acute psychological and physiological effects of MDMA after haloperidol pretreatment in healthy humans\", European Neuropsychopharmacology 10(4):289–295, 2000.",
+      "creditUrl": "https://bibliography.maps.org/resources/download/18088"
+    },
+    {
+      "id": "vollenweider-1998",
+      "title": "Vollenweider et al. 1998, antipsychotics and psilocybin",
+      "url": "https://bibliography.maps.org/resources/download/20540",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Antipsychotic and psilocybin findings from Vollenweider FX et al., \"Psilocybin induces schizophrenia-like psychosis in humans via a serotonin-2 agonist action\", NeuroReport 9(17):3897–3902, 1998.",
+      "creditUrl": "https://bibliography.maps.org/resources/download/20540"
+    },
+    {
+      "id": "mccord-2008",
+      "title": "McCord et al. 2008, AHA statement on cocaine chest pain",
+      "url": "https://www.clinicalcorrelations.org/?p=7328",
+      "retrievedAt": "2026-11-04",
+      "license": "Journal article. Facts only; all wording is ReUp's own.",
+      "credit": "Beta blocker and cocaine concerns from McCord J et al., \"Management of cocaine-associated chest pain and myocardial infarction: a scientific statement from the American Heart Association\", Circulation 117(14):1897–1907, 2008.",
+      "creditUrl": "https://www.clinicalcorrelations.org/?p=7328"
+    },
+    {
+      "id": "epilepsy-society",
+      "title": "Epilepsy Society: alcohol, drugs and epilepsy",
+      "url": "https://epilepsysociety.org.uk/about-epilepsy/epileptic-seizures/seizure-triggers/alcohol-drugs-and-epilepsy",
+      "retrievedAt": "2026-11-04",
+      "license": "© Epilepsy Society. Facts only; all wording is ReUp's own.",
+      "credit": "Seizure risks of alcohol and recreational drugs with epilepsy medicines from the Epilepsy Society (epilepsysociety.org.uk).",
+      "creditUrl": "https://epilepsysociety.org.uk/about-epilepsy/epileptic-seizures/seizure-triggers/alcohol-drugs-and-epilepsy"
+    },
+    {
+      "id": "hse-diabetes",
+      "title": "HSE: type 1 diabetes, alcohol and drugs",
+      "url": "https://www.hse.ie/conditions/type-1-diabetes/living-with/alcohol-drugs/",
+      "retrievedAt": "2026-11-04",
+      "license": "© Health Service Executive (Ireland). Facts only; all wording is ReUp's own.",
+      "credit": "Hypo risks of alcohol and recreational drugs with insulin from the HSE (hse.ie).",
+      "creditUrl": "https://www.hse.ie/conditions/type-1-diabetes/living-with/alcohol-drugs/"
     }
   ],
   "substances": [
@@ -2759,9 +2885,11 @@
         "escitalopram",
         "paroxetine"
       ],
-      "notes": "Can make MDMA and psychedelics feel weaker. Taking more to make up for it adds risk without much effect. Don't stop your medicine for a festival without talking to your prescriber.",
+      "notes": "Usually makes MDMA, LSD and mushrooms feel weaker. Taking more to make up for it is where the risk is. Don't stop your medicine for a festival without talking to your prescriber.",
       "sourceIds": [
-        "tripsit"
+        "tripsit",
+        "psychonautwiki",
+        "bonson-1996"
       ]
     },
     {
@@ -2774,7 +2902,7 @@
         "moclobemide",
         "selegiline"
       ],
-      "notes": "One of the most dangerous medicines to mix with MDMA or stimulants: blood pressure can spike to a crisis. Some drinks also react with it.",
+      "notes": "One of the most dangerous medicines to mix with MDMA or stimulants: blood pressure can spike to a crisis. It can also make mushrooms and GHB much stronger. Some drinks react with it too.",
       "sourceIds": [
         "tripsit"
       ]
@@ -2827,20 +2955,24 @@
         "lithium carbonate",
         "lithium citrate"
       ],
-      "notes": "Many reports of seizures with psychedelics, and MDMA brings a high risk of serotonin syndrome.",
+      "notes": "Many reports of seizures with psychedelics, and MDMA brings a high risk of serotonin syndrome. Getting dehydrated (heat, dancing, MDMA, drinking) can push lithium to toxic levels.",
       "sourceIds": [
-        "tripsit"
+        "tripsit",
+        "psychonautwiki",
+        "nhs-medicines"
       ]
     },
     {
       "id": "rx-pregabalin",
-      "name": "Pregabalin and gabapentinoids",
+      "name": "Pregabalin and gabapentin",
       "examples": [
-        "pregabalin"
+        "pregabalin",
+        "gabapentin"
       ],
-      "notes": "With GHB it stacks fast and can knock you out. With stimulants and MDMA, seizures are more likely.",
+      "notes": "With GHB or alcohol it stacks and can slow your breathing. With stimulants and MDMA, seizures are more likely. Gabapentin works the same way, so it gets the same ratings.",
       "sourceIds": [
-        "tripsit"
+        "tripsit",
+        "nhs-medicines"
       ]
     },
     {
@@ -2871,6 +3003,165 @@
       "notes": "Boosters slow how the body clears many party drugs, so a usual dose can be much stronger and last longer. Most other HIV medicines interact less, but check yours with your HIV clinic.",
       "sourceIds": [
         "bracchi-2015"
+      ]
+    },
+    {
+      "id": "rx-snri",
+      "name": "SNRI antidepressants",
+      "examples": [
+        "venlafaxine",
+        "duloxetine",
+        "desvenlafaxine"
+      ],
+      "notes": "Like SSRIs, they make MDMA feel weaker while its strain on the body stays. Taking more to make up for it adds risk. Don't stop without talking to your prescriber.",
+      "sourceIds": [
+        "psychonautwiki",
+        "hysek-2012"
+      ]
+    },
+    {
+      "id": "rx-tricyclic",
+      "name": "Tricyclic antidepressants",
+      "examples": [
+        "amitriptyline",
+        "nortriptyline",
+        "clomipramine",
+        "imipramine",
+        "dosulepin",
+        "doxepin"
+      ],
+      "notes": "Can make LSD and other psychedelics much stronger, and the NHS warns stimulants and hallucinogens can be dangerous with them. Also used in low doses for pain and sleep.",
+      "sourceIds": [
+        "psychonautwiki",
+        "bonson-murphy-1996",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-bupropion",
+      "name": "Bupropion",
+      "examples": [
+        "bupropion",
+        "Wellbutrin",
+        "Zyban"
+      ],
+      "notes": "Raises MDMA levels and makes it last longer. Bupropion makes seizures more likely, and cocaine, stimulants and heavy drinking add to that.",
+      "sourceIds": [
+        "fda-labels",
+        "schmid-2015"
+      ]
+    },
+    {
+      "id": "rx-sedating-antidepressant",
+      "name": "Mirtazapine and trazodone",
+      "examples": [
+        "mirtazapine",
+        "trazodone"
+      ],
+      "notes": "Sedating antidepressants, often taken for sleep. They add to the drowsiness of alcohol, GHB and ketamine, and can make psychedelics feel weaker.",
+      "sourceIds": [
+        "psychonautwiki",
+        "fda-labels",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-antipsychotic",
+      "name": "Antipsychotics",
+      "examples": [
+        "quetiapine",
+        "olanzapine",
+        "risperidone",
+        "aripiprazole",
+        "haloperidol",
+        "chlorpromazine"
+      ],
+      "notes": "Can block a lot of what psychedelics and MDMA do, so they may feel weak. Don't take more to make up for it. Adds to the drowsiness of alcohol and GHB.",
+      "sourceIds": [
+        "psychonautwiki",
+        "liechti-vollenweider-2000",
+        "nhs-medicines",
+        "vollenweider-1998"
+      ]
+    },
+    {
+      "id": "rx-z-drug",
+      "name": "Sleeping pills (Z-drugs)",
+      "examples": [
+        "zopiclone",
+        "zolpidem",
+        "eszopiclone",
+        "zaleplon"
+      ],
+      "notes": "Work like benzodiazepines. With alcohol or GHB you can stop breathing properly and be very hard to wake.",
+      "sourceIds": [
+        "fda-labels",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-valproate",
+      "name": "Sodium valproate",
+      "examples": [
+        "sodium valproate",
+        "valproic acid",
+        "divalproex",
+        "Epilim",
+        "Depakote"
+      ],
+      "notes": "Raises GHB levels in the blood, so a usual dose hits harder. Adds to the drowsiness of alcohol.",
+      "sourceIds": [
+        "fda-labels",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-beta-blocker",
+      "name": "Beta blockers",
+      "examples": [
+        "propranolol",
+        "atenolol",
+        "bisoprolol",
+        "metoprolol",
+        "nebivolol"
+      ],
+      "notes": "With cocaine, a beta blocker may let blood pressure rise and the heart's arteries tighten. The evidence is mixed, but cardiologists are cautious.",
+      "sourceIds": [
+        "mccord-2008",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-antiepileptic",
+      "name": "Epilepsy medicines",
+      "examples": [
+        "lamotrigine",
+        "levetiracetam",
+        "carbamazepine",
+        "topiramate",
+        "phenytoin",
+        "oxcarbazepine",
+        "zonisamide"
+      ],
+      "notes": "Stimulants, MDMA, cannabis and drinking can all bring on seizures. Vomiting can wash your medicine out. Never skip a dose at a festival. Valproate is listed separately.",
+      "sourceIds": [
+        "epilepsy-society",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "id": "rx-insulin",
+      "name": "Insulin and hypo-causing diabetes tablets",
+      "examples": [
+        "insulin",
+        "gliclazide",
+        "glimepiride",
+        "glibenclamide",
+        "glipizide"
+      ],
+      "notes": "Dancing, not eating and losing track of time can all cause a hypo, and a hypo can look like being drunk or high. Tell a friend you're diabetic and keep sugar on you.",
+      "sourceIds": [
+        "hse-diabetes"
       ]
     }
   ],
@@ -2955,12 +3246,35 @@
     {
       "substanceIds": [
         "2c-b",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "2C-B is likely to feel weaker on an SSRI. Don't take more to make up for it.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
         "rx-tramadol"
       ],
       "risk": "unsafe",
       "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "2c-b",
+        "rx-tricyclic"
+      ],
+      "risk": "caution",
+      "note": "The NHS warns hallucinogens can be dangerous with tricyclics. Tricyclics made LSD stronger, so start very low.",
+      "sourceIds": [
+        "bonson-murphy-1996",
+        "nhs-medicines"
       ]
     },
     {
@@ -3056,12 +3370,79 @@
     {
       "substanceIds": [
         "alcohol",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Alcohol may hit harder, and seizures are more likely as it wears off. Vomiting can wash your medicine out.",
+      "sourceIds": [
+        "epilepsy-society",
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-antipsychotic"
+      ],
+      "risk": "caution",
+      "note": "Alcohol adds to the drowsiness and unsteadiness. The NHS advises going easy.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
         "rx-benzodiazepine"
       ],
       "risk": "dangerous",
       "note": "They strengthen each other fast and unpredictably and can knock you out. If someone passes out, put them in the recovery position.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-beta-blocker"
+      ],
+      "risk": "caution",
+      "note": "Alcohol adds to the blood pressure drop, so you may feel dizzy or faint.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-bupropion"
+      ],
+      "risk": "caution",
+      "note": "Drink little or nothing: heavy drinking makes seizures more likely and alcohol may hit harder.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-insulin"
+      ],
+      "risk": "caution",
+      "note": "Alcohol can cause a hypo up to a day later, hides the warning signs, and a hypo can look like being drunk.",
+      "sourceIds": [
+        "hse-diabetes"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-lithium"
+      ],
+      "risk": "caution",
+      "note": "Heavy drinking dehydrates you, which can push lithium to toxic levels. Drink water too.",
+      "sourceIds": [
+        "nhs-medicines"
       ]
     },
     {
@@ -3089,6 +3470,39 @@
     {
       "substanceIds": [
         "alcohol",
+        "rx-pregabalin"
+      ],
+      "risk": "unsafe",
+      "note": "Together they can make you very drowsy and slow your breathing. The NHS advises not drinking.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-sedating-antidepressant"
+      ],
+      "risk": "caution",
+      "note": "Alcohol adds to the drowsiness and side effects. The NHS advises not drinking.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-snri"
+      ],
+      "risk": "caution",
+      "note": "Alcohol makes the side effects of SNRIs more likely. The NHS advises not drinking.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
         "rx-ssri"
       ],
       "risk": "caution",
@@ -3106,6 +3520,39 @@
       "note": "TripSit rates this combination as dangerous.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-tricyclic"
+      ],
+      "risk": "caution",
+      "note": "Adds to the drowsiness. See how the medicine affects you before drinking.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "Alcohol can make you sleepier on valproate. See how the medicine affects you first.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "alcohol",
+        "rx-z-drug"
+      ],
+      "risk": "dangerous",
+      "note": "Alcohol makes sleeping pills much stronger: breathing can slow and you can be very hard to wake.",
+      "sourceIds": [
+        "nhs-medicines"
       ]
     },
     {
@@ -3199,12 +3646,56 @@
     {
       "substanceIds": [
         "amphetamine",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "Speed on top is more of the same drug: heart rate, blood pressure and overheating risk all add up.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Can bring on seizures in people with epilepsy and may interact with the medicine.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-bupropion"
+      ],
+      "risk": "caution",
+      "note": "Bupropion makes seizures more likely, and stimulants add to that risk.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
         "rx-hiv-booster"
       ],
       "risk": "unsafe",
       "note": "Boosters can raise stimulant levels; deaths have been reported with methamphetamine. Start much lower.",
       "sourceIds": [
         "bracchi-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-insulin"
+      ],
+      "risk": "caution",
+      "note": "Not eating plus hours of dancing can cause a hypo, and it's easy to forget a dose. Check your sugar more often.",
+      "sourceIds": [
+        "hse-diabetes"
       ]
     },
     {
@@ -3253,6 +3744,28 @@
     },
     {
       "substanceIds": [
+        "amphetamine",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "The NHS warns stimulants can be dangerous with tricyclics. Both affect heart rhythm and blood pressure.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "amphetamine",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "If you take valproate for epilepsy, stimulants can bring on seizures.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
         "cannabis",
         "cocaine"
       ],
@@ -3293,6 +3806,50 @@
       "note": "TripSit rates this combination as caution.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Can bring on seizures in people with epilepsy and may interact with the medicine.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-lithium"
+      ],
+      "risk": "caution",
+      "note": "Reports link cannabis with lithium to psychosis and seizures.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-tricyclic"
+      ],
+      "risk": "caution",
+      "note": "Can cause a fast heartbeat and more drowsiness, especially in the first days on the medicine.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cannabis",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "The NHS warns cannabis with valproate can bring on panic, anxiety and memory problems.",
+      "sourceIds": [
+        "nhs-medicines"
       ]
     },
     {
@@ -3375,6 +3932,50 @@
     {
       "substanceIds": [
         "cocaine",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Can bring on seizures in people with epilepsy and may interact with the medicine.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-beta-blocker"
+      ],
+      "risk": "caution",
+      "note": "A beta blocker may let cocaine raise blood pressure and tighten the heart's arteries. Get help fast for chest pain.",
+      "sourceIds": [
+        "mccord-2008"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-bupropion"
+      ],
+      "risk": "caution",
+      "note": "Bupropion makes seizures more likely, and stimulants add to that risk.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-insulin"
+      ],
+      "risk": "caution",
+      "note": "Not eating plus hours of dancing can cause a hypo, and it's easy to forget a dose. Check your sugar more often.",
+      "sourceIds": [
+        "hse-diabetes"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
         "rx-maoi"
       ],
       "risk": "dangerous",
@@ -3414,6 +4015,28 @@
       "note": "Both make seizures more likely.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "The NHS warns stimulants can be dangerous with tricyclics. Both affect heart rhythm and blood pressure.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "cocaine",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "If you take valproate for epilepsy, stimulants can bring on seizures.",
+      "sourceIds": [
+        "epilepsy-society"
       ]
     },
     {
@@ -3475,6 +4098,17 @@
     {
       "substanceIds": [
         "ghb",
+        "rx-antipsychotic"
+      ],
+      "risk": "unsafe",
+      "note": "Sedating antipsychotics add to GHB's sedation, which can slow your breathing and knock you out.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
         "rx-benzodiazepine"
       ],
       "risk": "dangerous",
@@ -3493,6 +4127,17 @@
       "sourceIds": [
         "bracchi-2015",
         "harrington-1999"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "MAOIs can make GHB hit harder. Take much less.",
+      "sourceIds": [
+        "tripsit"
       ]
     },
     {
@@ -3520,12 +4165,56 @@
     {
       "substanceIds": [
         "ghb",
+        "rx-sedating-antidepressant"
+      ],
+      "risk": "unsafe",
+      "note": "Sedating antidepressants add to GHB's sedation, which can slow your breathing and knock you out.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
         "rx-tramadol"
       ],
       "risk": "dangerous",
       "note": "TripSit rates this combination as dangerous.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "Sedating antidepressants add to GHB's sedation, which can slow your breathing and knock you out.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-valproate"
+      ],
+      "risk": "unsafe",
+      "note": "Valproate raised GHB levels by about a quarter in a study. Take much less.",
+      "sourceIds": [
+        "fda-labels"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ghb",
+        "rx-z-drug"
+      ],
+      "risk": "dangerous",
+      "note": "GHB's medical form must never be taken with sleeping pills: together they can stop your breathing.",
+      "sourceIds": [
+        "fda-labels"
       ]
     },
     {
@@ -3608,6 +4297,17 @@
     {
       "substanceIds": [
         "ketamine",
+        "rx-sedating-antidepressant"
+      ],
+      "risk": "caution",
+      "note": "Taken for sleep near a ketamine dose, high amounts of either can slow your breathing.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "ketamine",
         "rx-tramadol"
       ],
       "risk": "dangerous",
@@ -3641,12 +4341,46 @@
     {
       "substanceIds": [
         "lsd",
+        "rx-antipsychotic"
+      ],
+      "risk": "caution",
+      "note": "Antipsychotics can block LSD's effects, so it may feel weak. Don't take more to make up for it.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-hiv-booster"
+      ],
+      "risk": "caution",
+      "note": "Ritonavir has caused severe narrowing of blood vessels with related ergot drugs. It's unclear for LSD, so take extra care.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
         "rx-lithium"
       ],
       "risk": "dangerous",
       "note": "Many reports of seizures and psychosis from this combination.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "MAOIs usually make LSD weaker. Don't take more to make up for it.",
+      "sourceIds": [
+        "tripsit",
+        "bonson-murphy-1996"
       ]
     },
     {
@@ -3663,12 +4397,48 @@
     {
       "substanceIds": [
         "lsd",
+        "rx-sedating-antidepressant"
+      ],
+      "risk": "caution",
+      "note": "Mirtazapine and trazodone may block some of LSD's effects. Don't take more to make up for it.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "SSRIs usually make LSD much weaker. Taking more to make up for it is where people get into trouble.",
+      "sourceIds": [
+        "tripsit",
+        "bonson-1996"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
         "rx-tramadol"
       ],
       "risk": "unsafe",
       "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "lsd",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "Tricyclics can make LSD much stronger, physically and mentally, with more risk of a bad trip or psychosis.",
+      "sourceIds": [
+        "psychonautwiki",
+        "bonson-murphy-1996",
+        "nhs-medicines"
       ]
     },
     {
@@ -3696,6 +4466,39 @@
     {
       "substanceIds": [
         "mdma",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Can bring on seizures in people with epilepsy and may interact with the medicine.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-antipsychotic"
+      ],
+      "risk": "caution",
+      "note": "An antipsychotic cut MDMA's good feelings in a study, but not its strain on the heart. Don't redose to chase it.",
+      "sourceIds": [
+        "liechti-vollenweider-2000"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-bupropion"
+      ],
+      "risk": "caution",
+      "note": "Bupropion raised MDMA levels and made its effects last longer in a study. Take less and don't redose early.",
+      "sourceIds": [
+        "schmid-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
         "rx-hiv-booster"
       ],
       "risk": "dangerous",
@@ -3704,6 +4507,17 @@
         "bracchi-2015",
         "harrington-1999",
         "henry-hill-1998"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-insulin"
+      ],
+      "risk": "caution",
+      "note": "Not eating plus hours of dancing can cause a hypo, and it's easy to forget a dose. Check your sugar more often.",
+      "sourceIds": [
+        "hse-diabetes"
       ]
     },
     {
@@ -3742,12 +4556,92 @@
     {
       "substanceIds": [
         "mdma",
+        "rx-snri"
+      ],
+      "risk": "caution",
+      "note": "Duloxetine blocked most of MDMA's effects in a study while raising its blood levels. Don't redose to chase it.",
+      "sourceIds": [
+        "psychonautwiki",
+        "hysek-2012"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "MDMA will likely feel much weaker, but the strain on your body doesn't drop. Fluoxetine and paroxetine also raise MDMA levels. Don't redose to chase it.",
+      "sourceIds": [
+        "psychonautwiki",
+        "liechti-2000-citalopram",
+        "segura-2005"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
         "rx-tramadol"
       ],
       "risk": "dangerous",
       "note": "Both make seizures more likely.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "The NHS warns stimulants can be dangerous with tricyclics. Both affect heart rhythm and blood pressure.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mdma",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "If you take valproate for epilepsy, stimulants can bring on seizures.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-adhd-stimulant"
+      ],
+      "risk": "caution",
+      "note": "Two stimulants together push heart rate and blood pressure to dangerous levels.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-antiepileptic"
+      ],
+      "risk": "caution",
+      "note": "Can bring on seizures in people with epilepsy and may interact with the medicine.",
+      "sourceIds": [
+        "epilepsy-society"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-bupropion"
+      ],
+      "risk": "caution",
+      "note": "Bupropion makes seizures more likely, and stimulants add to that risk.",
+      "sourceIds": [
+        "fda-labels"
       ]
     },
     {
@@ -3759,6 +4653,17 @@
       "note": "Boosters can raise mephedrone levels, so a usual dose can be much stronger. Start much lower.",
       "sourceIds": [
         "bracchi-2015"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-insulin"
+      ],
+      "risk": "caution",
+      "note": "Not eating plus hours of dancing can cause a hypo, and it's easy to forget a dose. Check your sugar more often.",
+      "sourceIds": [
+        "hse-diabetes"
       ]
     },
     {
@@ -3797,12 +4702,56 @@
     {
       "substanceIds": [
         "mephedrone",
+        "rx-snri"
+      ],
+      "risk": "caution",
+      "note": "Both act on serotonin, so the risk of serotonin syndrome rises, especially with repeat doses.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "Both act on serotonin, so the risk of serotonin syndrome rises, especially with repeat doses.",
+      "sourceIds": [
+        "psychonautwiki"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
         "rx-tramadol"
       ],
       "risk": "dangerous",
       "note": "Both make seizures more likely.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-tricyclic"
+      ],
+      "risk": "unsafe",
+      "note": "The NHS warns stimulants can be dangerous with tricyclics. Both affect heart rhythm and blood pressure.",
+      "sourceIds": [
+        "nhs-medicines"
+      ]
+    },
+    {
+      "substanceIds": [
+        "mephedrone",
+        "rx-valproate"
+      ],
+      "risk": "caution",
+      "note": "If you take valproate for epilepsy, stimulants can bring on seizures.",
+      "sourceIds": [
+        "epilepsy-society"
       ]
     },
     {
@@ -3852,6 +4801,17 @@
     {
       "substanceIds": [
         "psilocybin-mushrooms",
+        "rx-antipsychotic"
+      ],
+      "risk": "caution",
+      "note": "Some antipsychotics blocked most of psilocybin's effects in a study. Don't take more to make up for it.",
+      "sourceIds": [
+        "vollenweider-1998"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
         "rx-lithium"
       ],
       "risk": "dangerous",
@@ -3863,12 +4823,47 @@
     {
       "substanceIds": [
         "psilocybin-mushrooms",
+        "rx-maoi"
+      ],
+      "risk": "caution",
+      "note": "MAOIs can make mushrooms much stronger and longer. Start very low.",
+      "sourceIds": [
+        "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-ssri"
+      ],
+      "risk": "caution",
+      "note": "Mushrooms may feel weaker on an SSRI, though studies are mixed. Don't take more to make up for it.",
+      "sourceIds": [
+        "tripsit",
+        "becker-2022"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
         "rx-tramadol"
       ],
       "risk": "unsafe",
       "note": "Tramadol lowers the seizure threshold, and psychedelics can occasionally cause seizures too.",
       "sourceIds": [
         "tripsit"
+      ]
+    },
+    {
+      "substanceIds": [
+        "psilocybin-mushrooms",
+        "rx-tricyclic"
+      ],
+      "risk": "caution",
+      "note": "The NHS warns hallucinogens can be dangerous with tricyclics. Tricyclics made LSD stronger, so start very low.",
+      "sourceIds": [
+        "bonson-murphy-1996",
+        "nhs-medicines"
       ]
     }
   ]

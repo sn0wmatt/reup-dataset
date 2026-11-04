@@ -2,12 +2,12 @@
 
 Onset, come-up, peak, offset, total-duration and after-effect ranges, redose waits, typical
 dose ranges, effects, safer-use tips, signs to get medical help and combination risks
-for 12 substances commonly taken at music festivals, plus 9
+for 12 substances commonly taken at music festivals, plus 19
 prescription medicine classes. Every figure cites its source. It is the dataset behind the
 ReUp harm-reduction app for Apple Watch and iPhone, published here so anyone can check it,
 correct it and reuse it.
 
-**Version 0.5.0**, published 2026-11-03.
+**Version 0.6.0**, published 2026-11-03.
 
 > Timings are typical ranges, not guarantees, and are not medical advice. People vary, and
 > doses, purity and mixing change everything. If someone is in trouble, get medical help.
